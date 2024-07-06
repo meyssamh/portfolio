@@ -1,0 +1,50 @@
+{
+    "socials": [
+        {
+            "id": "1",
+            "title": "github",
+            "link": "https://github.com/meyssamh"
+        },
+        {
+            "id": "2",
+            "title": "linkedin",
+            "link": "https://www.linkedin.com/in/seyed-meyssam-h-b97318166"
+        },
+        {
+            "id": "3",
+            "title": "xing",
+            "link": "https://www.xing.com/profile/SeyedMeyssam_Hosseinifard/cv"
+        },
+        {
+            "id": "4",
+            "title": "email",
+            "link": "mailto:seyedmeyssam.hosseinifard@gmail.com"
+        }
+    ],
+    "projects": [
+        {
+            "id": "1",
+            "title": "title1",
+            "description": "description1",
+            "website": "https://box-pwa.vercel.app/",
+            "sourcecode": {
+                "available": true,
+                "frontend": "https://github.com/meyssamh/Box",
+                "backend": ""
+            },
+            "caution": "caution1"
+        },
+        {
+            "id": "2",
+            "title": "title2",
+            "description": "description2",
+            "website": "",
+            "sourcecode": {
+                "available": true,
+                "frontend": "https://www.github.com/meyssamh/Classroom_frontend",
+                "backend": "https://www.github.com/meyssamh/Classroom_backend"
+            },
+            "caution": "caution2"
+        }
+    ]
+}

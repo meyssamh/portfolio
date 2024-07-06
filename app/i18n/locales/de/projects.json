@@ -1,0 +1,13 @@
+{
+    "projects": "Beispielprojekte",
+    "title1": "Box - eine PWA-Einkaufsliste",
+    "description1": "Box ist eine responsive PWA-Einkaufsliste, die mit den Technologien Vue.js, Vuex, Vuetify und VueI18n entwickelt wurde.",
+    "caution1": "Diese Webseite wird verlegt, damit die Benutzer die PWA-Fähigkeiten der Webseite voll ausschöpfen können.",
+    "title2": "Classroom",
+    "description2": "Classroom ist eine Fullstack-Website für Lehrer zur Überwachung der Anwesenheit ihrer Schüler. Es wurde mit TypeScript, Node.js, Express.js, SQL Server, Prisma, React, Redux Toolkit und Sass entwickelt.",
+    "caution2": "Dieses Projekt wird mit Next.js entwickelt und im Web bereitgestellt.",
+    "website": "Webseite",
+    "frontend": "Frontend-Quellcode",
+    "backend": "Backend-Quellcode",
+    "hint": "Dieser Abschnitt wird bald fertiggestellt!"
+}
