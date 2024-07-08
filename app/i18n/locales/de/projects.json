@@ -6,8 +6,11 @@
     "title2": "Classroom",
     "description2": "Classroom ist eine Fullstack-Website für Lehrer zur Überwachung der Anwesenheit ihrer Schüler. Es wurde mit TypeScript, Node.js, Express.js, SQL Server, Prisma, React, Redux Toolkit und Sass entwickelt.",
     "caution2": "Dieses Projekt wird mit Next.js entwickelt und im Web bereitgestellt.",
+    "title3": "Silicon Box",
+    "description3": "Silicon Box ist eine Dummy- und einfache responsive E-Commerce-Website, die mit Next.js und TypeScript entwickelt wurde.",
     "website": "Webseite",
     "frontend": "Frontend-Quellcode",
     "backend": "Backend-Quellcode",
+    "source": "Quellcode",
     "hint": "Dieser Abschnitt wird bald fertiggestellt!"
 }

@@ -23,8 +23,8 @@ export const HeaderBase = ({ t, lng }) => {
     });
 
     const navigation = [
-        { name: t('about'), href: '#about' },
         { name: t('projects'), href: '#projects' },
+        { name: t('about'), href: '#about' },
         { name: t('contact'), href: '#contact' },
     ];
 

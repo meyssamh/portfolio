@@ -66,6 +66,22 @@ export default async function Projects({ lng }) {
                                 <></>
                         }
                         {
+                            project.sourcecode.available === true ?
+                                project.sourcecode.source.length > 0 ?
+                                    <>
+                                        <br />
+                                        <a
+                                            href={project.sourcecode.source}
+                                            className={'bg-slate-200 hover:bg-slate-300 rounded-md px-3 py-2 text-sm font-medium'}
+                                        >
+                                            {t('source')}
+                                        </a>
+                                        <br />
+                                    </> :
+                                    <></> :
+                                <></>
+                        }
+                        {
                             project.caution.length > 0 ?
                                 <>
                                     <br />
