@@ -7,7 +7,7 @@
     "description2": "Classroom یک وب سایت فول استک برای معلمان است تا حضور دانش آموزان خود را نظارت کنند. این برنامه با TypeScript، Node.js، Express.js، SQL Server، Prisma، React، Redux Toolkit و Sass توسعه یافته است.",
     "caution2": "این پروژه با استفاده از Next.js توسعه خواهد یافت و بر روی اینترنت قرار خواهد گرفت.",
     "title3": "Silicon Box",
-    "description3": "Silicon Box یک وب‌سایت ساده و پاسخگو برای تجارت الکترونیک است که توسط Next.js و TypeScript توسعه یافته است.",
+    "description3": "Silicon Box یک وب‌سایت تصنعی و ریسپانسیو برای تجارت الکترونیک است که توسط Next.js و TypeScript توسعه یافته است.",
     "website": "وب سایت",
     "frontend": "سورس کد فرانت اند",
     "backend": "سورس کد بک اند",
