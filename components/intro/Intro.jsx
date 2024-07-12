@@ -5,19 +5,16 @@ export default async function Intro({ lng }) {
 
     return (
         <section id='intro' className='my-16'>
-            <h1 className='text-6xl font-medium mb-4'>
+            <h1 className='text-6xl font-medium leading-tight'>
                 {t('greeting')}
-            </h1>
-            <h1 className='text-6xl font-medium mb-4'>
+                <br />
                 {t('name')}
-            </h1>
-            <h1 className='text-6xl font-medium mb-4'>
+                <br />
                 {t('introduction')}
-            </h1>
-            <h1 className='text-6xl font-medium mb-4'>
+                <br />
                 {t('location')}
             </h1>
-            <p className='font-medium'>
+            <p className='font-medium text-sm'>
                 {t('hint')}
             </p>
         </section >

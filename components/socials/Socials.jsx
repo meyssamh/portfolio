@@ -10,7 +10,7 @@ export default function Socials({ lng }) {
         <div className={'flex flex-wrap link'}>
             {data.socials.map((social, index) => (
                 <button
-                    className='hover:bg-slate-100 hover:scale-105 rounded-md px-3 py-2 text-sm font-medium'
+                    className='hover:bg-slate-100/50 dark:hover:bg-slate-800/50 hover:scale-105 rounded-md px-3 py-2 text-sm font-medium'
                     key={index}
                     onClick={() => window.open(social.link)}
                 >

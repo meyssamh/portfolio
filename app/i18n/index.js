@@ -4,7 +4,6 @@ import { initReactI18next } from 'react-i18next/initReactI18next';
 import { getOptions } from './settings';
 
 const initI18next = async (lng, ns) => {
-
     const i18nInstance = createInstance();
 
     await i18nInstance
@@ -16,7 +15,6 @@ const initI18next = async (lng, ns) => {
 }
 
 export async function useTranslation(lng, ns, options = {}) {
-
     const i18nextInstance = await initI18next(lng, ns);
 
     return {

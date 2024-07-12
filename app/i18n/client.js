@@ -49,5 +49,6 @@ export function useTranslation(lng, ns, options) {
             setCookie(cookieName, lng, { path: '/' });
         }, [lng, cookies.i18next, setCookie]);
     }
+    
     return ret;
 }
