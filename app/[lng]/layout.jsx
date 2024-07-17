@@ -1,5 +1,4 @@
 import { dir } from 'i18next';
-
 import { languages } from '../i18n/settings';
 import ThemeProvider from './provider';
 import './globals.css';

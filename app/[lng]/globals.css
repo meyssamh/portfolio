@@ -89,7 +89,7 @@ html[dir="ltr"] {
 }
 
 [class="dark"] {
-    --color: #485563;
+    --color: #29323c;
     --text-color: #f1f5f9;
     --background-color: linear-gradient(40deg, #29323c, #485563);
     --card-color: #02061780;

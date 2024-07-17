@@ -1,4 +1,4 @@
-"use client"
+'use client'
 
 import { useTranslation } from '../../app/i18n/client';
 import data from '../../data/portfolio.json';
@@ -19,4 +19,4 @@ export default function Socials({ lng }) {
             ))}
         </div>
     );
-};
+}

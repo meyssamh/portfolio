@@ -1,4 +1,4 @@
-"use client"
+'use client'
 
 import { HeaderBase } from './HeaderBase';
 import { useTranslation } from '../../app/i18n/client';
