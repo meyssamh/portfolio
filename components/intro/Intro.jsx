@@ -14,9 +14,6 @@ export default async function Intro({ lng }) {
                 <br />
                 {t('location')}
             </h1>
-            <p className='font-medium text-sm'>
-                {t('hint')}
-            </p>
         </section >
     );
 }

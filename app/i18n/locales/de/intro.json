@@ -2,6 +2,5 @@
     "greeting": "Hallo!",
     "name": "Ich bin Meyssam,",
     "introduction": "ein kreativer und fleißiger Entwickler",
-    "location": "mit Sitz in Teheran, Iran*.",
-    "hint": "* im Moment"
+    "location": "mit Sitz in Teheran, Iran."
 }
