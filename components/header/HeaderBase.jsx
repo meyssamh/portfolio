@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import {
-    Disclosure, DisclosureButton, DisclosurePanel, 
+    Disclosure, DisclosureButton, DisclosurePanel,
     Menu, MenuButton, MenuItem, MenuItems
 } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon, LanguageIcon } from '@heroicons/react/24/outline';
@@ -16,7 +16,14 @@ export const HeaderBase = ({ t, lng }) => {
                         href={`/${l}`}
                         className={'bg-slate-100/0 dark:bg-slate-800/0 font-medium block px-4 py-2 text-sm'}
                     >
-                        {l === 'en' ? 'English' : l === 'de' ? 'Deutsch' : 'فارسی'}
+                        {
+                            l === 'en' ?
+                                'English' :
+                                l === 'de' ?
+                                    'Deutsch' :
+                                    l === 'fr' ?
+                                        'Français' :
+                                        'فارسی'}
                     </Link>
                 )}
             </MenuItem>
