@@ -21,9 +21,11 @@ export const HeaderBase = ({ t, lng }) => {
                                 'English' :
                                 l === 'de' ?
                                     'Deutsch' :
-                                    l === 'fr' ?
-                                        'Français' :
-                                        'فارسی'}
+                                    l === 'es' ?
+                                        'Español' :
+                                        l === 'fr' ?
+                                            'Français' :
+                                            'فارسی'}
                     </Link>
                 )}
             </MenuItem>
