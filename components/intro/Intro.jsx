@@ -5,7 +5,7 @@ export default async function Intro({ lng }) {
 
     return (
         <section id='intro' className='my-16'>
-            <h1 className='text-6xl font-medium leading-tight'>
+            <h1 className='text-4xl md:text-6xl font-medium leading-tight'>
                 {t('greeting')}
                 <br />
                 {t('name')}

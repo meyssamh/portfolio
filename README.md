@@ -27,7 +27,7 @@ This is my personal portfolio website where you can learn more about me, see the
 ## Features
 
 - **Responsive Design**: The website is fully responsive and looks great on all devices.
-- **Multilingual Support**: The website supports English, German, and Persian languages.
+- **Multilingual Support**: The website supports English, German, Spanish, French and Persian languages.
 - **Modern UI**: A clean and modern user interface designed with Tailwind CSS.
 - **Dynamic Content**: Content is dynamically rendered using Next.js capabilities.
 
@@ -79,6 +79,6 @@ npm start
 
 Contributions are welcome! If you have any ideas for improvements or find any bugs, please open an issue or create a pull request.
 
-## Licens
+## License
 
 This project is licensed under the MIT License. See the **LICENSE** file for details.
