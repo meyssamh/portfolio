@@ -12,7 +12,11 @@ export default function Socials({ lng }) {
                 <button
                     className='hover:bg-slate-100/50 dark:hover:bg-slate-800/50 hover:scale-105 rounded-md px-3 py-2 text-sm font-medium'
                     key={index}
-                    onClick={() => window.open(social.link)}
+                    onClick={() => window.open(
+                        lng === "fa" ?
+                            "https://jobinja.ir/user/ER-7154239" :
+                            social.link
+                    )}
                 >
                     {t(social.title)}
                 </button>
