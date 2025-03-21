@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://meyssamdev.ir
+
+# Sitemaps
+Sitemap: https://meyssamdev.ir/sitemap.xml

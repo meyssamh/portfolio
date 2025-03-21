@@ -1,4 +1,5 @@
 import { dir } from 'i18next';
+
 import { languages } from '../i18n/settings';
 import ThemeProvider from './provider';
 import './globals.css';
@@ -8,7 +9,7 @@ export async function generateStaticParams() {
 };
 
 export const metadata = {
-	title: 'Meyssam',
+	title: 'Meyssam Hosseinifard',
 	description: 'Portfolio website of Seyed Meyssam Hosseinifard',
 };
 

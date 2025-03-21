@@ -7,6 +7,8 @@
     "classroomDescription": "Bei diesem Projekt handelt es sich um eine Website, die Professoren und Lehrern die Anwesenheit von Studenten einfach aufzeichnen und verwalten lässt. Ursprünglich wurde sie mit React und Node.js entwickelt und jetzt mit Next.js neu geschrieben.",
     "siliconTitle": "Silicon Box",
     "siliconDescription": "Silicon Box ist eine dummy und einfache responsive E-Commerce-Website, die mit Next.js und TypeScript entwickelt wurde.",
+    "springClassroomTitle": "Classroom Spring REST API",
+    "springClassroomDescription": "Dieses Projekt ist eine Backend-Implementierung, die mit Java und dem Spring Framework erstellt wurde. Es erfordert die ordnungsgemäße Konfiguration von Umgebungsvariablen und JWT-Schlüsseln, die mit OpenSSL generiert wurden, um eine sichere und zuverlässige Funktionalität zu gewährleisten.",
     "website": "Webseite",
     "frontend": "Frontend-Quellcode",
     "backend": "Backend-Quellcode",
