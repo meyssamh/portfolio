@@ -8,9 +8,9 @@ export default async function Intro({ lng }) {
             <h1 className='text-4xl md:text-6xl font-medium leading-tight'>
                 {t('greeting')}
                 <br />
-                {t('name')}
+                {t('name')} 
                 <br />
-                {t('introduction')}
+                {t('introduction')} 
                 <br />
                 {t('location')}
             </h1>

@@ -11,12 +11,12 @@ export default async function Contact({ lng }) {
                     {t('contact')}
                 </h2>
                 <div className='mt-10'>
-                    <h1 className='text-5xl font-bold'>
+                    <h2 className='text-5xl font-bold'>
                         {t('work')}
-                    </h1>
-                    <h1 className='text-5xl font-bold w-72'>
+                    </h2>
+                    <h2 className='text-5xl font-bold w-72'>
                         {t('together')}
-                    </h1>
+                    </h2>
                     <div className='mt-10'>
                         <Socials lng={lng} />
                     </div>
