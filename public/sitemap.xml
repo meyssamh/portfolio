@@ -1,4 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<sitemap><loc>https://meyssamdev.ir/sitemap-0.xml</loc></sitemap>
-</sitemapindex>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<url>
+<loc>https://meyssamdev.ir</loc>
+<xhtml:link rel="alternate" hreflang="de" href="https://meyssamdev.ir/de" />
+<xhtml:link rel="alternate" hreflang="en" href="https://meyssamdev.ir/en" />
+<xhtml:link rel="alternate" hreflang="es" href="https://meyssamdev.ir/es" />
+<xhtml:link rel="alternate" hreflang="fa" href="https://meyssamdev.ir/fa" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://meyssamdev.ir/fr" />
+<lastmod>2025-03-22T09:10:53.157Z</lastmod>
+</url>
+</urlset>
