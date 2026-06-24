@@ -79,33 +79,25 @@ html[dir="ltr"] {
 }
 
 :root {
-    /* Light Mode: Clean, airy, sophisticated */
-    --background-color: #FAFAF9;
-    /* Warm off-white (Stone 50) */
-    --text-color: #1C1917;
-    /* Deep warm black (Stone 900) */
-    --card-color: rgba(255, 255, 255, 0.6);
-    /* Frosted glass */
-    --card-border: rgba(28, 25, 23, 0.08);
-    /* Very subtle border */
-    --accent-color: #8B7355;
-    /* Muted Bronze */
+    /* Light Mode: Warm, sophisticated Alabaster (Soft, not blinding white) */
+    --background-color: #F2F0EB; 
+    --text-color: #292524; /* Stone 800 - Deep warm gray, softer than pure black */
+    --text-muted: #57534E; /* Stone 600 - Readable gray for paragraphs */
+    --card-color: rgba(255, 255, 255, 0.65); 
+    --card-border: rgba(41, 37, 36, 0.1); 
+    --accent-color: #8B7355; /* Muted Bronze */
     --glow-color: rgba(139, 115, 85, 0.15);
 }
 
 [class="dark"] {
-    /* Dark Mode: Deep, luxurious obsidian */
-    --background-color: #09090B;
-    /* True deep dark (Zinc 950) */
-    --text-color: #E7E5E4;
-    /* Soft warm white (Stone 200) */
-    --card-color: rgba(28, 25, 23, 0.4);
-    /* Dark frosted glass */
-    --card-border: rgba(255, 255, 255, 0.08);
-    /* Subtle glass edge */
-    --accent-color: #C5A47E;
-    /* Elegant Champagne Gold / Bronze */
-    --glow-color: rgba(197, 164, 126, 0.1);
+    /* Dark Mode: Rich, deep Charcoal (Not pure black, much softer) */
+    --background-color: #151517; 
+    --text-color: #E7E5E4; /* Stone 200 - Soft white */
+    --text-muted: #A8A29E; /* Stone 400 - Readable gray for paragraphs */
+    --card-color: rgba(30, 30, 33, 0.5); /* Slightly lighter than bg for depth */
+    --card-border: rgba(255, 255, 255, 0.06); 
+    --accent-color: #D4B896; /* Slightly brighter Champagne Gold for dark mode contrast */
+    --glow-color: rgba(212, 184, 150, 0.08);
 }
 
 body {

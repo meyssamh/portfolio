@@ -19,7 +19,7 @@ export default async function Projects({ lng }) {
                             <h3 className='text-2xl font-semibold mb-4 tracking-tight'>
                                 {t(project.title)}
                             </h3>
-                            <p className='font-light leading-relaxed text-zinc-600 dark:text-zinc-300 mb-6'>
+                            <p className='font-light leading-relaxed mb-6' style={{ color: 'var(--text-muted)' }}>
                                 {t(project.description)}
                             </p>
                             {

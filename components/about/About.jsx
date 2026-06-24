@@ -5,12 +5,17 @@ export default async function About({ lng }) {
 
     return (
         <section id='about' className='my-16'>
-            <h2 className='text-2xl font-bold mb-4'>{t('about')}</h2>
-            <p className='font-medium'>{t('paragraph1')}</p>
+            <p className='font-medium leading-relaxed' style={{ color: 'var(--text-muted)' }}>
+                {t('paragraph1')}
+            </p>
             <br />
-            <p className='font-medium'>{t('paragraph2')}</p>
+            <p className='font-medium leading-relaxed' style={{ color: 'var(--text-muted)' }}>
+                {t('paragraph2')}
+            </p>
             <br />
-            <p className='font-medium'>{t('paragraph3')}</p>
+            <p className='font-medium leading-relaxed' style={{ color: 'var(--text-muted)' }}>
+                {t('paragraph3')}
+            </p>
         </section >
     );
 }
