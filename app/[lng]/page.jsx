@@ -5,7 +5,9 @@ import About from '../../components/about/About';
 import Contact from '../../components/contact/Contact';
 import Footer from '../../components/footer/Footer';
 
-export default async function Home({ params: { lng } }) {
+export default async function Home({ params }) {
+	const { lng } = await params;
+	
 	return (
 		<>
 			<Header lng={lng} />

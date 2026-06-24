@@ -1,6 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 @font-face {
     font-family: 'IRANSans';
@@ -81,30 +79,39 @@ html[dir="ltr"] {
 }
 
 :root {
-    --color: #ada996;
-    --text-color: #1e293b;
-    --background-color: linear-gradient(-60deg, #ada996, #f2f2f2, #dbdbdb, #eaeaea);
-    --card-color: rgba(248, 250, 252, 0.5);
-    --hint-color: #f43f5e;
+    --background-color: #fafafa; /* Clean off-white */
+    --text-color: #18181b; /* Zinc 900 (Crisp dark text) */
+    --card-color: #ffffff;
+    --card-border: #e4e4e7; /* Zinc 200 (Subtle border) */
+    --hint-color: #f43f5e; /* Keeping your Rose hint color */
 }
 
 [class="dark"] {
-    --color: #29323c;
-    --text-color: #f1f5f9;
-    --background-color: linear-gradient(40deg, #29323c, #485563);
-    --card-color: #02061780;
+    --background-color: #09090b; /* Zinc 950 (Deep, rich dark mode) */
+    --text-color: #fafafa; /* Zinc 50 (Soft white text) */
+    --card-color: #18181b; /* Zinc 900 */
+    --card-border: #27272a; /* Zinc 800 */
 }
 
 body {
     padding: 0;
     box-sizing: border-box;
     color: var(--text-color);
-    background: var(--color);
-    background: var(--background-color);
+    background-color: var(--background-color);
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth theme switching */
 }
 
 .card {
     background-color: var(--card-color);
+    border: 1px solid var(--card-border);
+    transition: all 0.3s ease;
+}
+
+/* Modern hover effect for cards */
+.card:hover {
+    border-color: var(--text-color);
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
 }
 
 .hint {

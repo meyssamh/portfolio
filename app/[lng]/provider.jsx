@@ -1,6 +1,7 @@
 'use client'
 
 import { ThemeProvider as NextThemesProvider } from 'next-themes';
+import { CookiesProvider } from 'react-cookie';
 
 const ThemeProvider = ({ children, ...props }) => {
     return (
@@ -8,7 +9,9 @@ const ThemeProvider = ({ children, ...props }) => {
             {...props}
             themes={['light', 'dark']}
         >
-            {children}
+            <CookiesProvider>
+                {children}
+            </CookiesProvider>
         </NextThemesProvider>
     );
 };

@@ -9,6 +9,7 @@ export async function generateStaticParams() {
 };
 
 export const metadata = {
+	metadataBase: new URL('https://meyssamdev.ir'),
 	title: 'Seyed Meyssam Hosseinifard | Web Developer & Junior Java Developer',
 	description: "Seyed Meyssam Hosseinifard is a skilled web developer and junior Java developer specializing in Next.js, React, and Java. Explore his portfolio, learn about modern web technologies, and discover high-performance software engineering solutions.",
 	keywords: 'Web Developer, Next.js Developer, React Developer, Junior Java Developer, Frontend Engineer, Software Engineer, JavaScript, Java, Portfolio, Meyssam Hosseinifard',
@@ -66,14 +67,12 @@ export const metadata = {
 	},
 };
 
-
-
-export default function RootLayout({
+export default async function RootLayout({
 	children,
-	params: {
-		lng
-	}
+	params
 }) {
+	const { lng } = await params;
+
 	return (
 		<html lang={lng} dir={dir(lng)} suppressHydrationWarning={true}>
 			<head>
