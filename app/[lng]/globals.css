@@ -79,18 +79,33 @@ html[dir="ltr"] {
 }
 
 :root {
-    --background-color: #fafafa; /* Clean off-white */
-    --text-color: #18181b; /* Zinc 900 (Crisp dark text) */
-    --card-color: #ffffff;
-    --card-border: #e4e4e7; /* Zinc 200 (Subtle border) */
-    --hint-color: #f43f5e; /* Keeping your Rose hint color */
+    /* Light Mode: Clean, airy, sophisticated */
+    --background-color: #FAFAF9;
+    /* Warm off-white (Stone 50) */
+    --text-color: #1C1917;
+    /* Deep warm black (Stone 900) */
+    --card-color: rgba(255, 255, 255, 0.6);
+    /* Frosted glass */
+    --card-border: rgba(28, 25, 23, 0.08);
+    /* Very subtle border */
+    --accent-color: #8B7355;
+    /* Muted Bronze */
+    --glow-color: rgba(139, 115, 85, 0.15);
 }
 
 [class="dark"] {
-    --background-color: #09090b; /* Zinc 950 (Deep, rich dark mode) */
-    --text-color: #fafafa; /* Zinc 50 (Soft white text) */
-    --card-color: #18181b; /* Zinc 900 */
-    --card-border: #27272a; /* Zinc 800 */
+    /* Dark Mode: Deep, luxurious obsidian */
+    --background-color: #09090B;
+    /* True deep dark (Zinc 950) */
+    --text-color: #E7E5E4;
+    /* Soft warm white (Stone 200) */
+    --card-color: rgba(28, 25, 23, 0.4);
+    /* Dark frosted glass */
+    --card-border: rgba(255, 255, 255, 0.08);
+    /* Subtle glass edge */
+    --accent-color: #C5A47E;
+    /* Elegant Champagne Gold / Bronze */
+    --glow-color: rgba(197, 164, 126, 0.1);
 }
 
 body {
@@ -98,22 +113,67 @@ body {
     box-sizing: border-box;
     color: var(--text-color);
     background-color: var(--background-color);
-    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth theme switching */
+    transition: background-color 0.5s ease, color 0.5s ease;
+    background-image: radial-gradient(rgba(128, 128, 128, 0.02) 1px, transparent 1px);
+    background-size: 20px 20px;
 }
 
+/* --- THE LUXUS GLASS CARD --- */
 .card {
     background-color: var(--card-color);
+    backdrop-filter: blur(12px);
+    /* The frosted glass effect */
+    -webkit-backdrop-filter: blur(12px);
     border: 1px solid var(--card-border);
-    transition: all 0.3s ease;
+    border-radius: 16px;
+    /* Softer, more premium corners */
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    /* Smooth, expensive feeling transition */
+    position: relative;
+    overflow: hidden;
 }
 
-/* Modern hover effect for cards */
+/* The "Spotlight" Hover Effect */
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 16px;
+    background: radial-gradient(800px circle at var(--mouse-x, 50%) var(--mouse-y, 50%), var(--glow-color), transparent 40%);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    z-index: 0;
+}
+
+.card:hover::before {
+    opacity: 1;
+}
+
 .card:hover {
-    border-color: var(--text-color);
-    transform: translateY(-4px);
-    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+    border-color: var(--accent-color);
+    transform: translateY(-2px);
+    /* Very subtle lift */
+    box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.5);
+}
+
+/* Ensure content sits above the spotlight glow */
+.card>* {
+    position: relative;
+    z-index: 1;
+}
+
+/* Luxus Typography Tweaks */
+h1,
+h2,
+h3 {
+    letter-spacing: -0.02em;
+    /* Tighten headings slightly */
 }
 
 .hint {
-    color: var(--hint-color);
+    color: var(--accent-color);
+    /* Make hints use the premium bronze color */
 }
