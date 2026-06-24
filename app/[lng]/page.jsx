@@ -7,11 +7,11 @@ import Footer from '../../components/footer/Footer';
 
 export default async function Home({ params }) {
 	const { lng } = await params;
-	
+
 	return (
 		<>
 			<Header lng={lng} />
-			<main className='container mx-auto px-4'>
+			<main className='container mx-auto px-4 pt-28'>
 				<Intro lng={lng} />
 				<Projects lng={lng} />
 				<About lng={lng} />

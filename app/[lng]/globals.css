@@ -80,23 +80,30 @@ html[dir="ltr"] {
 
 :root {
     /* Light Mode: Warm, sophisticated Alabaster (Soft, not blinding white) */
-    --background-color: #F2F0EB; 
-    --text-color: #292524; /* Stone 800 - Deep warm gray, softer than pure black */
-    --text-muted: #57534E; /* Stone 600 - Readable gray for paragraphs */
-    --card-color: rgba(255, 255, 255, 0.65); 
-    --card-border: rgba(41, 37, 36, 0.1); 
-    --accent-color: #8B7355; /* Muted Bronze */
+    --background-color: #F2F0EB;
+    --text-color: #292524;
+    /* Stone 800 - Deep warm gray, softer than pure black */
+    --text-muted: #57534E;
+    /* Stone 600 - Readable gray for paragraphs */
+    --card-color: rgba(255, 255, 255, 0.65);
+    --card-border: rgba(41, 37, 36, 0.1);
+    --accent-color: #8B7355;
+    /* Muted Bronze */
     --glow-color: rgba(139, 115, 85, 0.15);
 }
 
 [class="dark"] {
     /* Dark Mode: Rich, deep Charcoal (Not pure black, much softer) */
-    --background-color: #151517; 
-    --text-color: #E7E5E4; /* Stone 200 - Soft white */
-    --text-muted: #A8A29E; /* Stone 400 - Readable gray for paragraphs */
-    --card-color: rgba(30, 30, 33, 0.5); /* Slightly lighter than bg for depth */
-    --card-border: rgba(255, 255, 255, 0.06); 
-    --accent-color: #D4B896; /* Slightly brighter Champagne Gold for dark mode contrast */
+    --background-color: #151517;
+    --text-color: #E7E5E4;
+    /* Stone 200 - Soft white */
+    --text-muted: #A8A29E;
+    /* Stone 400 - Readable gray for paragraphs */
+    --card-color: rgba(30, 30, 33, 0.5);
+    /* Slightly lighter than bg for depth */
+    --card-border: rgba(255, 255, 255, 0.06);
+    --accent-color: #D4B896;
+    /* Slightly brighter Champagne Gold for dark mode contrast */
     --glow-color: rgba(212, 184, 150, 0.08);
 }
 
@@ -108,6 +115,30 @@ body {
     transition: background-color 0.5s ease, color 0.5s ease;
     background-image: radial-gradient(rgba(128, 128, 128, 0.02) 1px, transparent 1px);
     background-size: 20px 20px;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(ellipse at 30% 20%, rgba(197, 164, 126, 0.03), transparent 50%),
+        radial-gradient(ellipse at 70% 80%, rgba(139, 115, 85, 0.03), transparent 50%);
+    pointer-events: none;
+    z-index: -1;
+    animation: gradientShift 20s ease infinite alternate;
+}
+
+@keyframes gradientShift {
+    0% {
+        transform: translate(0, 0) scale(1);
+    }
+
+    100% {
+        transform: translate(-2%, -2%) scale(1.05);
+    }
 }
 
 /* --- THE LUXUS GLASS CARD --- */
