@@ -33,7 +33,7 @@ export default function Switcher({ lng }) {
         <Switch
             checked={enabled}
             onChange={toggleTheme}
-            className='group relative flex h-7 w-14 cursor-pointer rounded-full bg-slate-100/50 dark:bg-slate-900/50 p-1 transition-colors duration-200 ease-in-out focus:outline-none data-[focus]:outline-1 data-[focus]:outline-slate-100/50 dark:data-[focus]:outline-slate-900 data-[checked]:bg-slate-100/50 dark:data-[checked]:bg-slate-900/50'
+            className='group relative flex h-7 w-14 cursor-pointer rounded-full bg-slate-100/50 dark:bg-slate-700/50 p-1 transition-colors duration-200 ease-in-out focus:outline-none data-[focus]:outline-1 data-[focus]:outline-slate-100/50 dark:data-[focus]:outline-slate-700 data-[checked]:bg-slate-100/50 dark:data-[checked]:bg-slate-700/50'
         >
             <span
                 aria-hidden='true'

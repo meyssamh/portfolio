@@ -10,13 +10,13 @@ export async function generateStaticParams() {
 
 export const metadata = {
 	metadataBase: new URL('https://meyssamdev.ir'),
-	title: 'Seyed Meyssam Hosseinifard | Web Developer & Junior Java Developer',
-	description: "Seyed Meyssam Hosseinifard is a skilled web developer and junior Java developer specializing in Next.js, React, and Java. Explore his portfolio, learn about modern web technologies, and discover high-performance software engineering solutions.",
-	keywords: 'Web Developer, Next.js Developer, React Developer, Junior Java Developer, Frontend Engineer, Software Engineer, JavaScript, Java, Portfolio, Meyssam Hosseinifard',
+	title: 'Seyed Meyssam Hosseinifard | Web Developer & JavaScriptDeveloper',
+	description: "Seyed Meyssam Hosseinifard is a skilled web developer and JavaScriptdeveloper specializing in Next.js, React, and JavaScript. Explore his portfolio, learn about modern web technologies, and discover high-performance software engineering solutions.",
+	keywords: 'Web Developer, Next.js Developer, React Developer, JavaScript Developer, Frontend Engineer, Software Engineer, JavaScript, Portfolio, Meyssam Hosseinifard',
 	author: 'Seyed Meyssam Hosseinifard',
 	openGraph: {
-		title: 'Seyed Meyssam Hosseinifard | Web Developer & Junior Java Developer',
-		description: 'Explore the portfolio of Seyed Meyssam Hosseinifard, a skilled Next.js, React developer, and junior Java developer. See my latest projects and contact me for collaboration.',
+		title: 'Seyed Meyssam Hosseinifard | Web Developer & JavaScriptDeveloper',
+		description: 'Explore the portfolio of Seyed Meyssam Hosseinifard, a skilled Next.js, React developer, and JavaScript developer. See my latest projects and contact me for collaboration.',
 		url: 'https://meyssamdev.ir',
 		siteName: 'Meyssam Hosseinifard Portfolio',
 		images: [
@@ -35,8 +35,8 @@ export const metadata = {
 			"name": "Seyed Meyssam Hosseinifard",
 			"url": "https://meyssamdev.ir",
 			"image": "https://meyssamdev.ir/og-image.jpg",
-			"jobTitle": "Web Developer & Junior Java Developer",
-			"description": "Web developer and junior Java developer specializing in Next.js, React, Java, and modern web technologies.",
+			"jobTitle": "Web Developer & JavaScriptDeveloper",
+			"description": "Web developer and JavaScript developer specializing in Next.js, React and modern web technologies.",
 			"sameAs": [
 				"https://github.com/meyssamh",
 				"https://www.linkedin.com/in/seyed-meyssam-h-b97318166",
@@ -56,8 +56,8 @@ export const metadata = {
 	twitter: {
 		card: 'summary_large_image',
 		site: '@JungeAmadeus',
-		title: 'Seyed Meyssam Hosseinifard | Web Developer & Junior Java Developer',
-		description: 'Discover my projects in Next.js, React, and Java development. Contact me for collaboration!',
+		title: 'Seyed Meyssam Hosseinifard | Web Developer & Junior JavaScript Developer',
+		description: 'Discover my projects in Next.js, React, and JavaScript development. Contact me for collaboration!',
 		images: ['/og-image.jpg'],
 	},
 	icons: {
@@ -78,7 +78,7 @@ export default async function RootLayout({
 			<head>
 				<link rel='shortcut icon' href='../../favicon.ico' />
 			</head>
-			<body>
+			<body className='select-none'>
 				<ThemeProvider
 					attribute='class'
 					defaultTheme='system'

@@ -7,16 +7,16 @@ export default function Socials({ lng }) {
     const { t } = useTranslation(lng, 'socials');
 
     return (
-        <div className={'flex flex-wrap link'}>
+        <div className={'flex flex-wrap gap-2'}>
             {data.socials.map((social, index) => {
                 if (lng === "fa" && social.title === "xing") {
                     return;
-                } else if(lng !== "fa" && (social.title === "jobvision" || social.title === "jobinja")) {
+                } else if (lng !== "fa" && (social.title === "jobvision" || social.title === "jobinja")) {
                     return;
                 } else {
                     return (
                         <button
-                            className='hover:bg-slate-100/50 dark:hover:bg-slate-800/50 hover:scale-105 rounded-md px-3 py-2 text-sm font-medium'
+                            className='hover:bg-zinc-100 dark:hover:bg-white/10 hover:text-[var(--accent-color)] rounded-full px-4 py-2 text-sm font-medium transition-[background-color] duration-200 cursor-pointer'
                             key={index}
                             onClick={() => window.open(social.link)}
                         >

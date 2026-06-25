@@ -25,24 +25,26 @@ export default function ContactClient({ contactTitle, workText, togetherText, ln
       </motion.p>
 
       {/* Line 1: "Let's build" - Massive, Bold, Solid */}
-      <div className='overflow-hidden'>
+      <div className='overflow-hidden w-full'>
         <motion.h2
           initial={{ y: "110%" }}
           animate={isInView ? { y: 0 } : {}}
           transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1], delay: 0.2 }}
-          className='text-6xl md:text-8xl lg:text-9xl font-bold tracking-tighter leading-[0.9] text-[var(--text-color)]'
+          // Changed to text-[2.6rem] for the perfect mobile size
+          className='text-[2.6rem] sm:text-6xl md:text-8xl lg:text-9xl font-bold tracking-tighter leading-[1.1] sm:leading-[0.9] text-[var(--text-color)] w-full break-words'
         >
           {workText}
         </motion.h2>
       </div>
 
       {/* Line 2: "something exceptional." - Italic, Lighter, Accent Color */}
-      <div className='overflow-hidden mt-2 md:mt-4'>
+      <div className='overflow-hidden w-full mt-2 md:mt-4'>
         <motion.h2
           initial={{ y: "110%" }}
           animate={isInView ? { y: 0 } : {}}
           transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1], delay: 0.4 }}
-          className='text-6xl md:text-8xl lg:text-9xl font-bold tracking-tighter leading-[0.9]'
+          // Changed to text-[2.6rem] for the perfect mobile size
+          className='text-[2.6rem] sm:text-6xl md:text-8xl lg:text-9xl font-bold tracking-tighter leading-[1.1] sm:leading-[0.9] w-full break-words'
         >
           <span className='italic font-light' style={{ color: 'var(--accent-color)' }}>
             {togetherText}

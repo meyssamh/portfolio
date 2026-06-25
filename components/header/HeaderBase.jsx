@@ -1,4 +1,4 @@
-'use client' // Make sure this is at the top!
+'use client'
 
 import Link from 'next/link';
 import {
@@ -12,18 +12,19 @@ import Switcher from '../switcher/Switcher';
 export const HeaderBase = ({ t, lng }) => {
     const languageButtons = languages.filter((l) => lng !== l).map((l, index) => {
         return (
-            <MenuItem key={l} className='hover:bg-slate-100/50 dark:hover:bg-slate-800/50 rounded-lg' >
+            // Updated: hover:bg-zinc-100 for a clearly visible light grey on white backgrounds
+            <MenuItem key={l} className='hover:bg-zinc-100 dark:hover:bg-white/10 rounded-lg' >
                 {() => (
                     <Link
                         href={`/${l}`}
-                        className={'font-medium block px-4 py-2 text-sm'}
+                        className={'font-medium block px-4 py-2 text-sm hover:text-[var(--accent-color)] transition-colors duration-200'}
                     >
                         {
                             l === 'en' ? 'English' :
-                            l === 'de' ? 'Deutsch' :
-                            l === 'es' ? 'Español' :
-                            l === 'fr' ? 'Français' :
-                            'فارسی'
+                                l === 'de' ? 'Deutsch' :
+                                    l === 'es' ? 'Español' :
+                                        l === 'fr' ? 'Français' :
+                                            'فارسی'
                         }
                     </Link>
                 )}
@@ -38,18 +39,16 @@ export const HeaderBase = ({ t, lng }) => {
     ];
 
     return (
-        // --- 1. OUTER WRAPPER (Positions the navbar on the screen) ---
         <div className='fixed top-6 left-1/2 -translate-x-1/2 z-50 w-[90%] max-w-4xl'>
             <Disclosure as='nav'>
                 {({ open }) => (
                     <>
-                        {/* --- 2. INNER WRAPPER (The Glass Pill Background) --- */}
-                        <div className='bg-white/70 dark:bg-zinc-900/70 backdrop-blur-md border border-zinc-200/50 dark:border-zinc-800/50 rounded-full px-4 sm:px-6 py-3 shadow-lg'>
+                        <div className='bg-[var(--card-color)] backdrop-blur-md border border-[var(--card-border)] rounded-full px-4 sm:px-6 py-3 shadow-lg transition-colors duration-300'>
                             <div className='relative flex items-center justify-between'>
-                                
+
                                 {/* Mobile menu button */}
                                 <div className='absolute inset-y-0 left-0 flex items-center sm:hidden'>
-                                    <DisclosureButton className='relative inline-flex items-center justify-center rounded-full p-2 hover:bg-slate-100/90 dark:hover:bg-slate-800/90 focus:outline-none focus:ring-0'>
+                                    <DisclosureButton className='relative inline-flex items-center justify-center rounded-full p-2 hover:bg-zinc-100 dark:hover:bg-white/10 focus:outline-none focus:ring-0 transition-[background-color] duration-200'>
                                         <span className='absolute -inset-0.5' />
                                         <span className='sr-only'>Open main menu</span>
                                         {open ? (
@@ -63,12 +62,12 @@ export const HeaderBase = ({ t, lng }) => {
                                 {/* Logo / Name */}
                                 <div className='flex flex-1 items-center justify-center sm:items-stretch sm:justify-start'>
                                     <div className='flex flex-shrink-0 items-center'>
-                                        <div className='flex space-x-4 sm:hidden font-bold'>
+                                        <div className='flex space-x-4 sm:hidden font-bold text-[var(--text-color)]'>
                                             {t('firstname')}
                                         </div>
                                     </div>
                                     <div className='hidden sm:block'>
-                                        <div className='flex space-x-4 font-bold'>
+                                        <div className='flex space-x-4 font-bold text-[var(--text-color)]'>
                                             {t('firstname')}
                                         </div>
                                     </div>
@@ -83,7 +82,8 @@ export const HeaderBase = ({ t, lng }) => {
                                                     <a
                                                         key={item.name}
                                                         href={item.href}
-                                                        className={'hover:bg-slate-100/90 dark:hover:bg-slate-800/90 hover:scale-105 rounded-full px-3 py-2 text-sm font-medium transition-all'}
+                                                        // Updated: hover:bg-zinc-100 for a clearly visible light grey on white backgrounds
+                                                        className={'hover:bg-zinc-100 dark:hover:bg-white/10 hover:text-[var(--accent-color)] rounded-full px-3 py-2 text-sm font-medium transition-[background-color] duration-200'}
                                                         aria-current={item.current ? 'page' : undefined}
                                                     >
                                                         {item.name}
@@ -94,19 +94,19 @@ export const HeaderBase = ({ t, lng }) => {
                                         </div>
                                     </div>
 
-                                    {/* Profile dropdown */}
+                                    {/* Language dropdown */}
                                     <Menu as='div' className='relative ml-2'>
                                         <div>
-                                            <MenuButton className='relative flex text-sm p-1 m-1 hover:bg-slate-100/90 dark:hover:bg-slate-800/90 hover:scale-105 rounded-full focus:outline-0 focus:ring-0 transition-all'>
+                                            <MenuButton className='group relative flex text-sm p-1 m-1 hover:bg-zinc-100 dark:hover:bg-white/10 rounded-full focus:outline-0 focus:ring-0 transition-[background-color] duration-200 cursor-pointer'>
                                                 <span className='absolute -inset-1.5' />
                                                 <span className='sr-only'>Open language menu</span>
-                                                <LanguageIcon className='block h-5 w-5' aria-hidden='true' />
+                                                <LanguageIcon className='block h-5 w-5 text-[var(--text-color)] group-hover:text-[var(--accent-color)]' aria-hidden='true' />
                                             </MenuButton>
                                         </div>
                                         <MenuItems
                                             anchor={'bottom end'}
                                             transition
-                                            className='absolute z-10 mt-2 w-28 origin-top-right rounded-xl bg-white/90 dark:bg-zinc-900/90 backdrop-blur-md py-1 shadow-lg ring-1 ring-black ring-opacity-5 transition focus:outline-none data-[closed]:scale-95 data-[closed]:transform data-[closed]:opacity-0 data-[enter]:duration-100 data-[leave]:duration-75 data-[enter]:ease-out data-[leave]:ease-in'
+                                            className='absolute z-[60] mt-2 w-32 origin-top-right rounded-xl bg-[var(--card-color)] py-1 shadow-xl border border-[var(--card-border)] transition focus:outline-none data-[closed]:scale-95 data-[closed]:transform data-[closed]:opacity-0 data-[enter]:duration-100 data-[leave]:duration-75 data-[enter]:ease-out data-[leave]:ease-in'
                                         >
                                             {languageButtons}
                                         </MenuItems>
@@ -116,14 +116,15 @@ export const HeaderBase = ({ t, lng }) => {
                         </div>
 
                         {/* Mobile Menu Panel */}
-                        <DisclosurePanel className='sm:hidden mt-2 bg-white/90 dark:bg-zinc-900/90 backdrop-blur-md rounded-2xl p-4 shadow-lg border border-zinc-200/50 dark:border-zinc-800/50'>
+                        <DisclosurePanel className='sm:hidden mt-2 bg-[var(--card-color)] backdrop-blur-md rounded-2xl p-4 shadow-lg border border-[var(--card-border)] transition-colors duration-300'>
                             <div className='space-y-1 px-2 pb-3 pt-2'>
                                 {navigation.map((item) => (
                                     <DisclosureButton
                                         key={item.name}
                                         as='a'
                                         href={item.href}
-                                        className={'hover:bg-slate-100/90 dark:hover:bg-slate-800/90 block rounded-xl px-3 py-2 text-base font-medium transition-all'}
+                                        // Updated: hover:bg-zinc-100 for a clearly visible light grey on white backgrounds
+                                        className={'hover:bg-zinc-100 dark:hover:bg-white/10 hover:text-[var(--accent-color)] block rounded-xl px-3 py-2 text-base font-medium transition-[background-color] duration-200'}
                                         aria-current={item.current ? 'page' : undefined}
                                     >
                                         {item.name}
