@@ -1,5 +1,12 @@
 {
-    "contact": "Kontakt aufnehmen",
-    "work": "Lass uns etwas",
-    "together": "Außergewöhnliches schaffen."
+  "contact": "Kontakt aufnehmen",
+  "work": "Lass uns etwas",
+  "together": "Außergewöhnliches schaffen.",
+  "formName": "Ihr Name",
+  "formEmail": "Ihre E-Mail",
+  "formMessage": "Ihre Nachricht",
+  "formSubmit": "Nachricht senden",
+  "formSending": "Wird gesendet...",
+  "formSuccess": "Nachricht erfolgreich gesendet! Ich werde mich bald melden.",
+  "formError": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut."
 }

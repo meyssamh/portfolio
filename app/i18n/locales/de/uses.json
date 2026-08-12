@@ -1,0 +1,21 @@
+{
+  "title": "Mein Setup",
+  "subtitle": "Die Werkzeuge und Geräte, die ich täglich zum Programmieren nutze.",
+  "hardware": "Hardware",
+  "software": "Software & Entwicklung",
+  "workspace": "Arbeitsplatz & Lebensstil",
+  "laptop": "MacBook Pro 14\" M3 Pro",
+  "monitor": "LG UltraFine 4K Display",
+  "keyboard": "Keychron Q1 Pro (Brown Switches)",
+  "mouse": "Logitech MX Master 3S",
+  "headphones": "Sony WH-1000XM5",
+  "editor": "Visual Studio Code (Dracula Theme)",
+  "terminal": "Warp Terminal + Oh My Zsh",
+  "browser": "Arc Browser",
+  "versionControl": "Git & GitHub",
+  "os": "macOS Sonoma",
+  "desk": "Uplift V2 Stehpult",
+  "chair": "Herman Miller Aeron",
+  "coffee": "Doppelter Espresso (Hafermilch)",
+  "music": "Lo-Fi Beats & Deep Focus"
+}

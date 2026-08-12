@@ -1,6 +1,39 @@
 {
-    "about": "About Me",
-    "paragraph1": "Hello! I’m Seyed Meyssam Hosseinifard, a passionate Web and JavaScriptDeveloper with over 5 years of experience building digital products. My journey has taken me through various technologies, but my core expertise now lies in crafting high-performance applications using React, Next.js, and JavaScript.",
-    "paragraph2": "I believe that great software is where beautiful design meets robust engineering. I thrive on solving complex challenges and building intuitive user experiences that not only look stunning but perform flawlessly under the hood.",
-    "paragraph3": "I am always looking for the next big challenge. If you are seeking a dedicated, detail-oriented developer ready to bring your vision to life, I would love to connect. Let's collaborate and turn your ideas into reality."
+  "about": "About Me",
+  "paragraph1": "Hello! I’m Seyed Meyssam Hosseinifard, a passionate Web and JavaScriptDeveloper with over 5 years of experience building digital products. My journey has taken me through various technologies, but my core expertise now lies in crafting high-performance applications using React, Next.js, and JavaScript.",
+  "paragraph2": "I believe that great software is where beautiful design meets robust engineering. I thrive on solving complex challenges and building intuitive user experiences that not only look stunning but perform flawlessly under the hood.",
+  "paragraph3": "I am always looking for the next big challenge. If you are seeking a dedicated, detail-oriented developer ready to bring your vision to life, I would love to connect. Let's collaborate and turn your ideas into reality.",
+  "timelineTitle": "My Journey",
+  "item1_year": "2021 - Present",
+  "item1_role": "Full-Stack Developer",
+  "item1_company": "Freelance",
+  "item1_desc": "Building modern, scalable web applications with React, Next.js, and Java Spring Boot.",
+  "item2_year": "2019 - 2021",
+  "item2_role": "Web Developer",
+  "item2_company": "Various Projects",
+  "item2_desc": "Developed responsive websites and Progressive Web Apps using Vue.js and React.",
+
+  "skillsTitle": "Technical Expertise",
+  "expertLevel": "Expert",
+  "proficientLevel": "Proficient",
+  "familiarLevel": "Familiar",
+
+  "educationTitle": "Education",
+  "university": "Applied Scientific University of Industries of Iran",
+  "degree": "Bachelor's Degree in Software Engineering",
+  "years": "2015 - 2019",
+
+  "languagesTitle": "Language Proficiency",
+
+  "testimonialTitle": "What Others Say",
+  "testimonialText": "Meyssam is a rare find. His ability to translate complex requirements into elegant, scalable code is unmatched. He delivered our platform ahead of schedule with impeccable attention to detail.",
+  "testimonialAuthor": "Sarah Jenkins",
+  "testimonialRole": "CTO, Tech Innovations",
+  "certificationsTitle": "Certifications & Learning",
+  "langPersian": "Persian",
+  "langGerman": "German",
+  "langEnglish": "English",
+  "levelNative": "Native",
+  "levelC1": "C1 (Advanced)",
+  "levelProfessional": "Professional"
 }

@@ -1,5 +1,12 @@
 {
-    "contact": "Get in Touch",
-    "work": "Let's build",
-    "together": "something exceptional."
+  "contact": "Get in Touch",
+  "work": "Let's build",
+  "together": "something exceptional.",
+  "formName": "Your Name",
+  "formEmail": "Your Email",
+  "formMessage": "Your Message",
+  "formSubmit": "Send Message",
+  "formSending": "Sending...",
+  "formSuccess": "Message sent successfully! I'll get back to you soon.",
+  "formError": "Something went wrong. Please try again."
 }
