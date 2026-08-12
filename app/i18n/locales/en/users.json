@@ -1,0 +1,21 @@
+{
+  "title": "My Setup",
+  "subtitle": "The tools and gear I use daily to build software.",
+  "hardware": "Hardware",
+  "software": "Software & Dev",
+  "workspace": "Workspace & Lifestyle",
+  "laptop": "MacBook Pro 14\" M3 Pro",
+  "monitor": "LG UltraFine 4K Display",
+  "keyboard": "Keychron Q1 Pro (Brown Switches)",
+  "mouse": "Logitech MX Master 3S",
+  "headphones": "Sony WH-1000XM5",
+  "editor": "Visual Studio Code (Dracula Theme)",
+  "terminal": "Warp Terminal + Oh My Zsh",
+  "browser": "Arc Browser",
+  "versionControl": "Git & GitHub",
+  "os": "macOS Sonoma",
+  "desk": "Uplift V2 Standing Desk",
+  "chair": "Herman Miller Aeron",
+  "coffee": "Double Espresso (Oat Milk)",
+  "music": "Lo-Fi Beats & Deep Focus"
+}

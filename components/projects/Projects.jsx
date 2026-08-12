@@ -1,28 +1,224 @@
-import { useTranslation } from '../../app/i18n';
-import ProjectsClient from './ProjectsClient';
-import data from '../../data/portfolio.json';
+'use client';
 
-export default async function Projects({ lng }) {
-    const { t } = await useTranslation(lng, 'projects');
+import { useRef } from 'react';
+import { motion, useInView } from 'framer-motion';
+import Link from 'next/link';
+import {
+  GlobeAltIcon,
+  CodeBracketIcon,
+  ArrowRightIcon,
+  ArrowLeftIcon,
+} from '@heroicons/react/24/outline';
 
-    // 1. Translate everything on the Server!
-    const translatedProjects = data.projects.map(project => ({
-        ...project,
-        title: t(project.title),
-        description: t(project.description),
-        caution: project.caution ? t(project.caution) : '',
-        websiteText: t('website'),
-        frontendText: t('frontend'),
-        backendText: t('backend'),
-        sourceText: t('source')
-    }));
+export default function Projects({
+  projectsTitle,
+  caseStudyText,
+  boxTitle,
+  boxDescription,
+  boxCaution,
+  classroomTitle,
+  classroomDescription,
+  siliconTitle,
+  siliconDescription,
+  springClassroomTitle,
+  springClassroomDescription,
+  website,
+  frontend,
+  backend,
+  source,
+  hint,
+  lng,
+}) {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, margin: '-100px' });
 
-    return (
-        <ProjectsClient 
-            projectsTitle={t('projects')}
-            projectData={translatedProjects}
-            hintText={t('hint')} // Pass the hint string directly
-            lng={lng}
-        />
-    );
+  const isRTL = lng === 'fa';
+  const ArrowIcon = isRTL ? ArrowLeftIcon : ArrowRightIcon;
+
+  const projects = [
+    {
+      slug: 'box-pwa',
+      hasCaseStudy: true,
+      title: boxTitle,
+      description: boxDescription,
+      caution: boxCaution,
+      liveUrl: 'https://box-pwa.example.com',
+      githubFrontend: 'https://github.com/yourusername/box-pwa',
+      githubBackend: null,
+      tags: ['Vue.js', 'PWA', 'Offline-First'],
+    },
+    {
+      slug: 'classroom-system',
+      hasCaseStudy: true,
+      title: classroomTitle,
+      description: classroomDescription,
+      caution: null,
+      liveUrl: 'https://classroom.example.com',
+      githubFrontend: 'https://github.com/yourusername/classroom-nextjs',
+      githubBackend: 'https://github.com/yourusername/classroom-spring',
+      tags: ['Next.js', 'Spring Boot', 'PostgreSQL'],
+    },
+    {
+      slug: 'silicon-box',
+      hasCaseStudy: false,
+      title: siliconTitle,
+      description: siliconDescription,
+      caution: null,
+      liveUrl: 'https://siliconbox.example.com',
+      githubFrontend: 'https://github.com/yourusername/silicon-box',
+      githubBackend: null,
+      tags: ['Next.js', 'TypeScript', 'E-Commerce'],
+    },
+    {
+      slug: 'spring-classroom',
+      hasCaseStudy: false,
+      title: springClassroomTitle,
+      description: springClassroomDescription,
+      caution: null,
+      liveUrl: null,
+      githubFrontend: null,
+      githubBackend: 'https://github.com/yourusername/spring-classroom-api',
+      tags: ['Spring Boot', 'Java', 'REST API', 'JWT'],
+    },
+  ];
+
+  return (
+    <section id="projects" className="max-w-4xl mx-auto" ref={ref}>
+      {/* Section Header */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={isInView ? { opacity: 1, y: 0 } : {}}
+        transition={{ duration: 0.6 }}
+        className="flex items-center gap-4 mb-12"
+      >
+        {/* The Signature Bronze Line */}
+        <div
+          className="h-[2px] w-8 md:w-12"
+          style={{ backgroundColor: 'var(--accent-color)' }}
+        ></div>
+
+        {/* The Bold Title */}
+        <h2 className="text-2xl md:text-4xl font-bold tracking-tight text-[var(--text-color)]">
+          {projectsTitle}
+        </h2>
+      </motion.div>
+
+      {/* Projects Grid */}
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        {projects.map((project, index) => (
+          <motion.div
+            key={project.slug}
+            initial={{ opacity: 0, y: 30 }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.6, delay: 0.2 + index * 0.1 }}
+            className="group relative"
+          >
+            {/* Main Card */}
+            <div
+              className={`card p-8 rounded-2xl h-full flex flex-col hover:border-[var(--accent-color)] transition-all duration-300 hover:shadow-2xl ${project.hasCaseStudy ? 'cursor-pointer' : ''}`}
+            >
+              {/* Project Header */}
+              <div className="mb-6">
+                <div className="flex items-start justify-between mb-4">
+                  <h3 className="text-2xl md:text-3xl font-bold text-[var(--text-color)] group-hover:text-[var(--accent-color)] transition-colors duration-300">
+                    {project.title}
+                  </h3>
+                  {project.hasCaseStudy && (
+                    <ArrowIcon className="w-6 h-6 text-zinc-400 group-hover:text-[var(--accent-color)] transition-colors duration-300 flex-shrink-0" />
+                  )}
+                </div>
+
+                {/* Tags */}
+                <div className="flex flex-wrap gap-2 mb-4">
+                  {project.tags.map((tag, tagIndex) => (
+                    <span
+                      key={tagIndex}
+                      className="px-3 py-1 text-xs font-medium rounded-full bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              </div>
+
+              {/* Description */}
+              <p className="text-zinc-600 dark:text-zinc-400 leading-relaxed mb-6 flex-grow">
+                {project.description}
+              </p>
+
+              {/* Caution Note */}
+              {project.caution && (
+                <div className="mb-6 p-4 rounded-xl bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800">
+                  <p className="text-sm text-amber-800 dark:text-amber-200 font-medium">
+                    {project.caution}
+                  </p>
+                </div>
+              )}
+
+              {/* Action Buttons */}
+              <div className="flex flex-wrap gap-3 pt-4 border-t border-zinc-200 dark:border-zinc-700">
+                {/* 1. These will appear at the START (Right in Persian, Left in English) */}
+                {project.githubFrontend && (
+                  <a
+                    href={project.githubFrontend}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-sm font-medium text-zinc-600 dark:text-zinc-400 hover:text-[var(--accent-color)] dark:hover:text-[var(--accent-color)] transition-colors duration-300"
+                  >
+                    <CodeBracketIcon className="w-4 h-4" />
+                    {frontend}
+                  </a>
+                )}
+
+                {project.githubBackend && (
+                  <a
+                    href={project.githubBackend}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-sm font-medium text-zinc-600 dark:text-zinc-400 hover:text-[var(--accent-color)] dark:hover:text-[var(--accent-color)] transition-colors duration-300"
+                  >
+                    <CodeBracketIcon className="w-4 h-4" />
+                    {backend}
+                  </a>
+                )}
+
+                {!project.hasCaseStudy && project.liveUrl && (
+                  <a
+                    href={project.liveUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-sm font-medium text-zinc-600 dark:text-zinc-400 hover:text-[var(--accent-color)] dark:hover:text-[var(--accent-color)] transition-colors duration-300"
+                  >
+                    <GlobeAltIcon className="w-4 h-4" />
+                    {website}
+                  </a>
+                )}
+
+                {/* 2. This will appear at the END (Left in Persian, Right in English) */}
+                {project.hasCaseStudy && (
+                  <Link
+                    href={`/${lng}/projects/${project.slug}`}
+                    className="ms-auto inline-flex items-center gap-2 text-sm font-medium text-[var(--accent-color)] hover:opacity-80 transition-opacity duration-300"
+                  >
+                    {caseStudyText}
+                    <ArrowIcon className="w-4 h-4" />
+                  </Link>
+                )}
+              </div>
+            </div>
+          </motion.div>
+        ))}
+      </div>
+
+      {/* Coming Soon Hint */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={isInView ? { opacity: 1, y: 0 } : {}}
+        transition={{ duration: 0.6, delay: 0.8 }}
+        className="mt-16 text-center"
+      >
+        <p className="text-[var(--accent-color)] italic">{hint}</p>
+      </motion.div>
+    </section>
+  );
 }

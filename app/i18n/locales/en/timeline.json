@@ -1,0 +1,11 @@
+{
+  "title": "My Journey",
+  "item1_year": "2021 - Present",
+  "item1_role": "Full-Stack Developer",
+  "item1_company": "Freelance",
+  "item1_desc": "Building modern, scalable web applications with React, Next.js, and Java Spring Boot.",
+  "item2_year": "2019 - 2021",
+  "item2_role": "Web Developer",
+  "item2_company": "Various Projects",
+  "item2_desc": "Developed responsive websites and Progressive Web Apps using Vue.js, Vuex, and React."
+}

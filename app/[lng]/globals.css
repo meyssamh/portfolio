@@ -1,204 +1,244 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @custom-variant dark (&:where(.dark, .dark *));
 
 @font-face {
-    font-family: 'IRANSans';
-    font-style: normal;
-    font-weight: 200;
-    src: url('../../public/fonts/IRANSans/ttf/IRANSansWeb\(FaNum\)_UltraLight.ttf')format('truetype');
+  font-family: 'IRANSans';
+  font-style: normal;
+  font-weight: 200;
+  src: url('../../public/fonts/IRANSans/ttf/IRANSansWeb\(FaNum\)_UltraLight.ttf') format('truetype');
 }
 
 @font-face {
-    font-family: 'IRANSans';
-    font-style: normal;
-    font-weight: 300;
-    src: url('../../public/fonts/IRANSans/ttf/IRANSansWeb\(FaNum\)_Light.ttf')format('truetype');
+  font-family: 'IRANSans';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../../public/fonts/IRANSans/ttf/IRANSansWeb\(FaNum\)_Light.ttf') format('truetype');
 }
 
 @font-face {
-    font-family: 'IRANSans';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../../public/fonts/IRANSans/ttf/IRANSansWeb\(FaNum\).ttf')format('truetype');
+  font-family: 'IRANSans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../../public/fonts/IRANSans/ttf/IRANSansWeb\(FaNum\).ttf') format('truetype');
 }
 
 @font-face {
-    font-family: 'IRANSans';
-    font-style: normal;
-    font-weight: 500;
-    src: url('../../public/fonts/IRANSans/ttf/IRANSansWeb\(FaNum\)_Medium.ttf')format('truetype');
+  font-family: 'IRANSans';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../../public/fonts/IRANSans/ttf/IRANSansWeb\(FaNum\)_Medium.ttf') format('truetype');
 }
 
 @font-face {
-    font-family: 'IRANSans';
-    font-style: normal;
-    font-weight: 700;
-    src: url('../../public/fonts/IRANSans/ttf/IRANSansWeb\(FaNum\)_Bold.ttf')format('truetype');
+  font-family: 'IRANSans';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../../public/fonts/IRANSans/ttf/IRANSansWeb\(FaNum\)_Bold.ttf') format('truetype');
 }
 
 @font-face {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 200;
-    src: url('../../public/fonts/Poppins/Poppins-ExtraLight.ttf')format(truetype);
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 200;
+  src: url('../../public/fonts/Poppins/Poppins-ExtraLight.ttf') format(truetype);
 }
 
 @font-face {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 300;
-    src: url('../../public/fonts/Poppins/Poppins-Light.ttf')format(truetype);
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../../public/fonts/Poppins/Poppins-Light.ttf') format(truetype);
 }
 
 @font-face {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../../public/fonts/Poppins/Poppins-Regular.ttf')format(truetype);
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../../public/fonts/Poppins/Poppins-Regular.ttf') format(truetype);
 }
 
 @font-face {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 500;
-    src: url('../../public/fonts/Poppins/Poppins-Medium.ttf')format(truetype);
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../../public/fonts/Poppins/Poppins-Medium.ttf') format(truetype);
 }
 
 @font-face {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../../public/fonts/Poppins/Poppins-Bold.ttf')format(truetype);
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../../public/fonts/Poppins/Poppins-Bold.ttf') format(truetype);
 }
 
-html[dir="rtl"] {
-    font-family: 'IRANSans', sans-serif;
+html[dir='rtl'] {
+  font-family: 'IRANSans', sans-serif;
 }
 
-html[dir="ltr"] {
-    font-family: 'Poppins', sans-serif;
+html[dir='ltr'] {
+  font-family: 'Poppins', sans-serif;
 }
 
 :root {
-    /* Light Mode: Warm, sophisticated Alabaster (Soft, not blinding white) */
-    --background-color: #F2F0EB;
-    --text-color: #292524;
-    /* Stone 800 - Deep warm gray, softer than pure black */
-    --text-muted: #57534E;
-    /* Stone 600 - Readable gray for paragraphs */
-    --card-color: rgba(255, 255, 255, 0.65);
-    --card-border: rgba(41, 37, 36, 0.1);
-    --accent-color: #8B7355;
-    /* Muted Bronze */
-    --glow-color: rgba(139, 115, 85, 0.15);
+  /* Light Mode: Warm, sophisticated Alabaster (Soft, not blinding white) */
+  --background-color: #f2f0eb;
+  --text-color: #292524;
+  /* Stone 800 - Deep warm gray, softer than pure black */
+  --text-muted: #57534e;
+  /* Stone 600 - Readable gray for paragraphs */
+  --card-color: rgba(255, 255, 255, 0.65);
+  --card-border: rgba(41, 37, 36, 0.1);
+  --accent-color: #8b7355;
+  /* Muted Bronze */
+  --glow-color: rgba(139, 115, 85, 0.15);
 }
 
-[class="dark"] {
-    /* Dark Mode: Rich, deep Charcoal (Not pure black, much softer) */
-    --background-color: #151517;
-    --text-color: #E7E5E4;
-    /* Stone 200 - Soft white */
-    --text-muted: #A8A29E;
-    /* Stone 400 - Readable gray for paragraphs */
-    --card-color: rgba(30, 30, 33, 0.5);
-    /* Slightly lighter than bg for depth */
-    --card-border: rgba(255, 255, 255, 0.06);
-    --accent-color: #D4B896;
-    /* Slightly brighter Champagne Gold for dark mode contrast */
-    --glow-color: rgba(212, 184, 150, 0.08);
+[class='dark'] {
+  /* Dark Mode: Rich, deep Charcoal (Not pure black, much softer) */
+  --background-color: #151517;
+  --text-color: #e7e5e4;
+  /* Stone 200 - Soft white */
+  --text-muted: #a8a29e;
+  /* Stone 400 - Readable gray for paragraphs */
+  --card-color: rgba(30, 30, 33, 0.5);
+  /* Slightly lighter than bg for depth */
+  --card-border: rgba(255, 255, 255, 0.06);
+  --accent-color: #d4b896;
+  /* Slightly brighter Champagne Gold for dark mode contrast */
+  --glow-color: rgba(212, 184, 150, 0.08);
 }
 
 body {
-    padding: 0;
-    box-sizing: border-box;
-    color: var(--text-color);
-    background-color: var(--background-color);
-    transition: background-color 0.5s ease, color 0.5s ease;
-    background-image: radial-gradient(rgba(128, 128, 128, 0.02) 1px, transparent 1px);
-    background-size: 20px 20px;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  transition:
+    background-color 0.5s ease,
+    color 0.5s ease;
+  background-image: radial-gradient(rgba(128, 128, 128, 0.02) 1px, transparent 1px);
+  background-size: 20px 20px;
 }
 
 body::before {
-    content: '';
-    position: fixed;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: radial-gradient(ellipse at 30% 20%, rgba(197, 164, 126, 0.03), transparent 50%),
-        radial-gradient(ellipse at 70% 80%, rgba(139, 115, 85, 0.03), transparent 50%);
-    pointer-events: none;
-    z-index: -1;
-    animation: gradientShift 20s ease infinite alternate;
+  content: '';
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background:
+    radial-gradient(ellipse at 30% 20%, rgba(197, 164, 126, 0.03), transparent 50%),
+    radial-gradient(ellipse at 70% 80%, rgba(139, 115, 85, 0.03), transparent 50%);
+  pointer-events: none;
+  z-index: -1;
+  animation: gradientShift 20s ease infinite alternate;
 }
 
 @keyframes gradientShift {
-    0% {
-        transform: translate(0, 0) scale(1);
-    }
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
 
-    100% {
-        transform: translate(-2%, -2%) scale(1.05);
-    }
+  100% {
+    transform: translate(-2%, -2%) scale(1.05);
+  }
 }
 
 /* --- THE LUXUS GLASS CARD --- */
 .card {
-    background-color: var(--card-color);
-    backdrop-filter: blur(12px);
-    /* The frosted glass effect */
-    -webkit-backdrop-filter: blur(12px);
-    border: 1px solid var(--card-border);
-    border-radius: 16px;
-    /* Softer, more premium corners */
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    /* Smooth, expensive feeling transition */
-    position: relative;
-    overflow: hidden;
+  background-color: var(--card-color);
+  backdrop-filter: blur(12px);
+  /* The frosted glass effect */
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--card-border);
+  border-radius: 16px;
+  /* Softer, more premium corners */
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  /* Smooth, expensive feeling transition */
+  position: relative;
+  overflow: hidden;
 }
 
 /* The "Spotlight" Hover Effect */
 .card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    border-radius: 16px;
-    background: radial-gradient(800px circle at var(--mouse-x, 50%) var(--mouse-y, 50%), var(--glow-color), transparent 40%);
-    opacity: 0;
-    transition: opacity 0.5s ease;
-    z-index: 0;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 16px;
+  background: radial-gradient(
+    800px circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
+    var(--glow-color),
+    transparent 40%
+  );
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  z-index: 0;
 }
 
 .card:hover::before {
-    opacity: 1;
+  opacity: 1;
 }
 
 .card:hover {
-    border-color: var(--accent-color);
-    transform: translateY(-2px);
-    /* Very subtle lift */
-    box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.5);
+  border-color: var(--accent-color);
+  transform: translateY(-2px);
+  /* Very subtle lift */
+  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.5);
 }
 
 /* Ensure content sits above the spotlight glow */
-.card>* {
-    position: relative;
-    z-index: 1;
+.card > * {
+  position: relative;
+  z-index: 1;
 }
 
 /* Luxus Typography Tweaks */
 h1,
 h2,
 h3 {
-    letter-spacing: -0.02em;
-    /* Tighten headings slightly */
+  letter-spacing: -0.02em;
+  /* Tighten headings slightly */
 }
 
 .hint {
-    color: var(--accent-color);
-    /* Make hints use the premium bronze color */
+  color: var(--accent-color);
+  /* Make hints use the premium bronze color */
+}
+
+/* Luxury Skeleton Shimmer Animation */
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.skeleton-shimmer {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.08) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite ease-in-out;
+}
+
+/* Ensure it works beautifully in both light and dark modes */
+.light .skeleton-shimmer {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.04) 50%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite ease-in-out;
 }

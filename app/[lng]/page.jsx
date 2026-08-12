@@ -1,4 +1,4 @@
-import { Header } from '../../components/header/client';
+import Header from '../../components/header/Header';
 import Intro from '../../components/intro/Intro';
 import Projects from '../../components/projects/Projects';
 import About from '../../components/about/About';
@@ -6,18 +6,15 @@ import Contact from '../../components/contact/Contact';
 import Footer from '../../components/footer/Footer';
 
 export default async function Home({ params }) {
-	const { lng } = await params;
+  const { lng } = await params;
 
-	return (
-		<>
-			<Header lng={lng} />
-			<main className='container mx-auto px-4 pt-28'>
-				<Intro lng={lng} />
-				<Projects lng={lng} />
-				<About lng={lng} />
-				<Contact lng={lng} />
-			</main>
-			<Footer lng={lng} />
-		</>
-	);
+  return (
+    <>
+      <Header lng={lng} />
+      <main className="container mx-auto px-4 pt-28">
+        <Intro lng={lng} />
+      </main>
+      <Footer lng={lng} />
+    </>
+  );
 }

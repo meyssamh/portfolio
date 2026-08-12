@@ -1,4 +1,3 @@
-
 # Portfolio
 
 Welcome to my portfolio website built with Next.js! This website showcases my projects, skills, and experiences as a web developer.
@@ -36,22 +35,22 @@ This is my personal portfolio website where you can learn more about me, see the
 To get a local copy up and running, follow these steps:
 
 1. **Clone the repository:**
-   
-    ```bash
-    git clone https://github.com/meyssamh/portfolio.git
-    ```
-    
+
+   ```bash
+   git clone https://github.com/meyssamh/portfolio.git
+   ```
+
 2. **Navigate to the project directory:**
-   
-    ```bash
-    cd portfolio
-    ```
-    
+
+   ```bash
+   cd portfolio
+   ```
+
 3. **Install dependencies:**
-   
-    ```bash
-    npm install
-    ```
+
+   ```bash
+   npm install
+   ```
 
 ## Usage
 

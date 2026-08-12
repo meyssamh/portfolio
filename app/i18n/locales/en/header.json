@@ -1,7 +1,9 @@
 {
-    "firstname": "Meyssam",
-    "name": "Seyed Meyssam Hosseinifard",
-    "about": "About",
-    "projects": "Works",
-    "contact": "Contact"
+  "firstname": "Meyssam",
+  "name": "Seyed Meyssam Hosseinifard",
+  "about": "About Me",
+  "projects": "Projects",
+  "uses": "Uses",
+  "resume": "Resume",
+  "contact": "Contact"
 }

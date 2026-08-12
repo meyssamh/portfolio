@@ -1,88 +1,88 @@
 {
-    "socials": [
-        {
-            "id": "1",
-            "title": "github",
-            "link": "https://github.com/meyssamh"
-        },
-        {
-            "id": "2",
-            "title": "linkedin",
-            "link": "https://www.linkedin.com/in/seyed-meyssam-h-b97318166"
-        },
-        {
-            "id": "3",
-            "title": "xing",
-            "link": "https://www.xing.com/profile/SeyedMeyssam_Hosseinifard/cv"
-        },
-        {
-            "id": "4",
-            "title": "jobvision",
-            "link": "https://jobvision.ir/cv/85055210-100651"
-        },
-        {
-            "id": "5",
-            "title": "jobinja",
-            "link": "https://jobinja.ir/user/ER-7154239"
-        },
-        {
-            "id": "6",
-            "title": "email",
-            "link": "mailto:seyedmeyssam.hosseinifard@gmail.com"
-        }
-    ],
-    "projects": [
-        {
-            "id": "1",
-            "title": "classroomTitle",
-            "description": "classroomDescription",
-            "website": "https://clsr.ir/",
-            "sourcecode": {
-                "available": true,
-                "frontend": "",
-                "backend": "",
-                "source": "https://github.com/meyssamh/classroom"
-            },
-            "caution": ""
-        },
-        {
-            "id": "2",
-            "title": "springClassroomTitle",
-            "description": "springClassroomDescription",
-            "website": "",
-            "sourcecode": {
-                "available": true,
-                "frontend": "",
-                "backend": "https://www.github.com/meyssamh/Classroom_Spring_REST",
-                "source": ""
-            },
-            "caution": ""
-        },
-        {
-            "id": "3",
-            "title": "boxTitle",
-            "description": "boxDescription",
-            "website": "https://box-pwa.vercel.app/",
-            "sourcecode": {
-                "available": true,
-                "frontend": "https://github.com/meyssamh/Box",
-                "backend": "",
-                "source": ""
-            },
-            "caution": "boxCaution"
-        },
-        {
-            "id": "4",
-            "title": "siliconTitle",
-            "description": "siliconDescription",
-            "website": "https://silicon-box.vercel.app/",
-            "sourcecode": {
-                "available": true,
-                "frontend": "",
-                "backend": "",
-                "source": "https://github.com/meyssamh/Silicon-Box"
-            },
-            "caution": ""
-        }
-    ]
+  "socials": [
+    {
+      "id": "1",
+      "title": "github",
+      "link": "https://github.com/meyssamh"
+    },
+    {
+      "id": "2",
+      "title": "linkedin",
+      "link": "https://www.linkedin.com/in/seyed-meyssam-h-b97318166"
+    },
+    {
+      "id": "3",
+      "title": "xing",
+      "link": "https://www.xing.com/profile/SeyedMeyssam_Hosseinifard/cv"
+    },
+    {
+      "id": "4",
+      "title": "jobvision",
+      "link": "https://jobvision.ir/cv/85055210-100651"
+    },
+    {
+      "id": "5",
+      "title": "jobinja",
+      "link": "https://jobinja.ir/user/ER-7154239"
+    },
+    {
+      "id": "6",
+      "title": "email",
+      "link": "mailto:seyedmeyssam.hosseinifard@gmail.com"
+    }
+  ],
+  "projects": [
+    {
+      "id": "1",
+      "title": "classroomTitle",
+      "description": "classroomDescription",
+      "website": "https://clsr.ir/",
+      "sourcecode": {
+        "available": true,
+        "frontend": "",
+        "backend": "",
+        "source": "https://github.com/meyssamh/classroom"
+      },
+      "caution": ""
+    },
+    {
+      "id": "2",
+      "title": "springClassroomTitle",
+      "description": "springClassroomDescription",
+      "website": "",
+      "sourcecode": {
+        "available": true,
+        "frontend": "",
+        "backend": "https://www.github.com/meyssamh/Classroom_Spring_REST",
+        "source": ""
+      },
+      "caution": ""
+    },
+    {
+      "id": "3",
+      "title": "boxTitle",
+      "description": "boxDescription",
+      "website": "https://box-pwa.vercel.app/",
+      "sourcecode": {
+        "available": true,
+        "frontend": "https://github.com/meyssamh/Box",
+        "backend": "",
+        "source": ""
+      },
+      "caution": "boxCaution"
+    },
+    {
+      "id": "4",
+      "title": "siliconTitle",
+      "description": "siliconDescription",
+      "website": "https://silicon-box.vercel.app/",
+      "sourcecode": {
+        "available": true,
+        "frontend": "",
+        "backend": "",
+        "source": "https://github.com/meyssamh/Silicon-Box"
+      },
+      "caution": ""
+    }
+  ]
 }
