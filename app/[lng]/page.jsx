@@ -1,8 +1,5 @@
 import Header from '../../components/header/Header';
 import Intro from '../../components/intro/Intro';
-import Projects from '../../components/projects/Projects';
-import About from '../../components/about/About';
-import Contact from '../../components/contact/Contact';
 import Footer from '../../components/footer/Footer';
 
 export default async function Home({ params }) {
@@ -11,9 +8,9 @@ export default async function Home({ params }) {
   return (
     <>
       <Header lng={lng} />
-      <main className="container mx-auto px-4 pt-28">
+      <section className="container mx-auto px-4 pt-28">
         <Intro lng={lng} />
-      </main>
+      </section>
       <Footer lng={lng} />
     </>
   );

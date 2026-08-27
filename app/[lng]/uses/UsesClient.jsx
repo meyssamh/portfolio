@@ -41,32 +41,40 @@ export default function UsesClient({
       {/* Categories Grid */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {categories.map((category, index) => (
+          // 1. motion.div handles ONLY the scroll entrance animation and grid height
           <motion.div
             key={index}
             initial={{ opacity: 0, y: 30 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: category.delay }}
-            className="card p-8 rounded-2xl flex flex-col h-full"
+            className="h-full"
           >
-            {/* Category Title */}
-            <div className="flex items-center gap-3 mb-8 pb-4 border-b border-[var(--card-border)]">
-              <div className="h-[2px] w-8" style={{ backgroundColor: 'var(--accent-color)' }}></div>
-              <h2 className="text-xl font-bold text-[var(--accent-color)]">{category.title}</h2>
-            </div>
+            {/* 2. Standard div handles the PERFECT CSS hover elevation */}
+            <div className="card p-8 rounded-2xl flex flex-col h-full group/card hover:border-[var(--accent-color)] transition-all duration-300 hover:shadow-xl">
+              {/* Category Title */}
+              <div className="flex items-center gap-3 mb-8 pb-4 border-b border-[var(--card-border)]">
+                <div
+                  className="h-[2px] w-8"
+                  style={{ backgroundColor: 'var(--accent-color)' }}
+                ></div>
+                <h2 className="text-xl font-bold text-[var(--accent-color)]">{category.title}</h2>
+              </div>
 
-            {/* Items List */}
-            <ul className="space-y-6 flex-grow">
-              {category.items.map((item, itemIndex) => (
-                <li key={itemIndex} className="group">
-                  <p className="text-xs font-medium uppercase tracking-wider text-zinc-500 dark:text-zinc-400 mb-1 group-hover:text-[var(--accent-color)] transition-colors duration-300">
-                    {item.label}
-                  </p>
-                  <p className="text-base font-medium text-[var(--text-color)] group-hover:text-[var(--accent-color)] transition-colors duration-300">
-                    {item.value}
-                  </p>
-                </li>
-              ))}
-            </ul>
+              {/* Items List */}
+              <ul className="space-y-6 flex-grow">
+                {category.items.map((item, itemIndex) => (
+                  // Named group/item so hovering the item only changes its own text color
+                  <li key={itemIndex} className="group/item cursor-default">
+                    <p className="text-xs font-medium uppercase tracking-wider text-zinc-500 dark:text-zinc-400 mb-1 group-hover/item:text-[var(--accent-color)] transition-colors duration-300">
+                      {item.label}
+                    </p>
+                    <p className="text-base font-medium text-[var(--text-color)] group-hover/item:text-[var(--accent-color)] transition-colors duration-300">
+                      {item.value}
+                    </p>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </motion.div>
         ))}
       </div>

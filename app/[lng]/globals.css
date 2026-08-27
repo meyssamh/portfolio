@@ -94,8 +94,7 @@ html[dir='ltr'] {
   --glow-color: rgba(139, 115, 85, 0.15);
 }
 
-[class='dark'] {
-  /* Dark Mode: Rich, deep Charcoal (Not pure black, much softer) */
+.dark {
   --background-color: #151517;
   --text-color: #e7e5e4;
   /* Stone 200 - Soft white */
@@ -158,7 +157,6 @@ body::before {
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   /* Smooth, expensive feeling transition */
   position: relative;
-  overflow: hidden;
 }
 
 /* The "Spotlight" Hover Effect */
@@ -170,6 +168,7 @@ body::before {
   right: 0;
   bottom: 0;
   border-radius: 16px;
+  clip-path: inset(0 round 16px);
   background: radial-gradient(
     800px circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
     var(--glow-color),
@@ -241,4 +240,20 @@ h3 {
   );
   background-size: 200% 100%;
   animation: shimmer 1.5s infinite ease-in-out;
+}
+
+/* ========================================= */
+/* DARK MODE CARD POLISH (FORCED)            */
+/* ========================================= */
+
+.dark .card {
+  /* Make the glass slightly lighter so it stands out from the background */
+  background-color: rgba(255, 255, 255, 0.04) !important;
+  border-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+.dark .card:hover {
+  /* A distinct, warm bronze shadow that is actually visible in dark mode */
+  box-shadow: 0 20px 40px -10px rgba(212, 184, 150, 0.25) !important;
+  border-color: var(--accent-color) !important;
 }

@@ -30,6 +30,6 @@
   "langGerman": "Deutsch",
   "langEnglish": "Englisch",
   "levelNative": "Muttersprache",
-  "levelC1": "C1 (Fortgeschritten)",
-  "levelProfessional": "Fließend"
+  "levelFluent": "Fließend",
+  "levelProfessional": "Verhandlungssicher"
 }

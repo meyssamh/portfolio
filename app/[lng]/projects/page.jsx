@@ -1,3 +1,4 @@
+import { notFound } from 'next/navigation';
 import Header from '../../../components/header/Header';
 import Projects from '../../../components/projects/Projects';
 import Footer from '../../../components/footer/Footer';

@@ -43,8 +43,9 @@ export default function ResumeClient({
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
             href={`/resume-${lng}.pdf`}
-            target="_blank"
-            rel="noopener noreferrer"
+            // target="_blank"
+            // rel="noopener noreferrer"
+            download="Seyed_Meyssam_Hosseinifard.pdf"
             className="group inline-flex items-center gap-2 bg-[var(--accent-color)] text-white dark:text-zinc-900 px-8 py-4 rounded-full font-medium hover:opacity-90 transition-all duration-300 hover:scale-105 shadow-lg cursor-pointer"
           >
             <ArrowDownTrayIcon className="w-5 h-5 group-hover:animate-bounce" />
