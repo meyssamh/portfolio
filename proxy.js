@@ -8,7 +8,7 @@ export const config = {
   matcher: ['/((?!api|_next/static|_next/image|assets|favicon.ico|sw.js|site.webmanifest).*)'],
 };
 
-export function middleware(req) {
+export function proxy(req) {
   if (req.nextUrl.pathname.includes('.')) {
     return NextResponse.next();
   }

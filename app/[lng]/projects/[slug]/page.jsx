@@ -1,3 +1,5 @@
+import { notFound } from 'next/navigation';
+
 import Header from '../../../../components/header/Header';
 import Footer from '../../../../components/footer/Footer';
 import { useTranslation } from '../../../i18n';
@@ -35,6 +37,12 @@ export async function generateStaticParams() {
 export default async function CaseStudyPage({ params }) {
   const { lng, slug } = await params;
   const { t } = await useTranslation(lng, 'case-study');
+
+  const validProjects = ['box-pwa', 'classroom-system', 'silicon-box', 'spring-classroom'];
+
+  if (!validProjects.includes(slug)) {
+    notFound();
+  }
 
   const project = projectsData[slug];
   if (!project) notFound();

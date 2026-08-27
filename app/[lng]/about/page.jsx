@@ -49,7 +49,7 @@ export default async function AboutPage({ params }) {
           langGerman={t('langGerman')}
           langEnglish={t('langEnglish')}
           levelNative={t('levelNative')}
-          levelC1={t('levelC1')}
+          levelFluent={t('levelFluent')}
           levelProfessional={t('levelProfessional')}
         />
       </main>

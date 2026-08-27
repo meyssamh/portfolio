@@ -114,18 +114,13 @@ export default function Projects({
             className="group relative"
           >
             {/* Main Card */}
-            <div
-              className={`card p-8 rounded-2xl h-full flex flex-col hover:border-[var(--accent-color)] transition-all duration-300 hover:shadow-2xl ${project.hasCaseStudy ? 'cursor-pointer' : ''}`}
-            >
+            <div className="card p-8 rounded-2xl h-full flex flex-col hover:border-[var(--accent-color)] transition-all duration-300 hover:shadow-2xl">
               {/* Project Header */}
               <div className="mb-6">
                 <div className="flex items-start justify-between mb-4">
                   <h3 className="text-2xl md:text-3xl font-bold text-[var(--text-color)] group-hover:text-[var(--accent-color)] transition-colors duration-300">
                     {project.title}
                   </h3>
-                  {project.hasCaseStudy && (
-                    <ArrowIcon className="w-6 h-6 text-zinc-400 group-hover:text-[var(--accent-color)] transition-colors duration-300 flex-shrink-0" />
-                  )}
                 </div>
 
                 {/* Tags */}
@@ -156,53 +151,61 @@ export default function Projects({
               )}
 
               {/* Action Buttons */}
-              <div className="flex flex-wrap gap-3 pt-4 border-t border-zinc-200 dark:border-zinc-700">
-                {/* 1. These will appear at the START (Right in Persian, Left in English) */}
-                {project.githubFrontend && (
-                  <a
-                    href={project.githubFrontend}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 text-sm font-medium text-zinc-600 dark:text-zinc-400 hover:text-[var(--accent-color)] dark:hover:text-[var(--accent-color)] transition-colors duration-300"
-                  >
-                    <CodeBracketIcon className="w-4 h-4" />
-                    {frontend}
-                  </a>
-                )}
+              <div className="flex flex-col gap-4 pt-4 border-t border-zinc-200 dark:border-zinc-700">
+                {/* 1. Source Code / Live Links (Secondary Actions) */}
+                <div className="flex flex-wrap items-center gap-3">
+                  {project.githubFrontend && (
+                    <a
+                      href={project.githubFrontend}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 text-sm font-medium text-zinc-600 dark:text-zinc-400 hover:text-[var(--accent-color)] dark:hover:text-[var(--accent-color)] transition-colors duration-300"
+                    >
+                      <CodeBracketIcon className="w-4 h-4" />
+                      {frontend}
+                    </a>
+                  )}
 
-                {project.githubBackend && (
-                  <a
-                    href={project.githubBackend}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 text-sm font-medium text-zinc-600 dark:text-zinc-400 hover:text-[var(--accent-color)] dark:hover:text-[var(--accent-color)] transition-colors duration-300"
-                  >
-                    <CodeBracketIcon className="w-4 h-4" />
-                    {backend}
-                  </a>
-                )}
+                  {project.githubBackend && (
+                    <a
+                      href={project.githubBackend}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 text-sm font-medium text-zinc-600 dark:text-zinc-400 hover:text-[var(--accent-color)] dark:hover:text-[var(--accent-color)] transition-colors duration-300"
+                    >
+                      <CodeBracketIcon className="w-4 h-4" />
+                      {backend}
+                    </a>
+                  )}
 
-                {!project.hasCaseStudy && project.liveUrl && (
-                  <a
-                    href={project.liveUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 text-sm font-medium text-zinc-600 dark:text-zinc-400 hover:text-[var(--accent-color)] dark:hover:text-[var(--accent-color)] transition-colors duration-300"
-                  >
-                    <GlobeAltIcon className="w-4 h-4" />
-                    {website}
-                  </a>
-                )}
+                  {project.liveUrl && (
+                    <a
+                      href={project.liveUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 text-sm font-medium text-zinc-600 dark:text-zinc-400 hover:text-[var(--accent-color)] dark:hover:text-[var(--accent-color)] transition-colors duration-300"
+                    >
+                      <GlobeAltIcon className="w-4 h-4" />
+                      {website}
+                    </a>
+                  )}
+                </div>
 
-                {/* 2. This will appear at the END (Left in Persian, Right in English) */}
+                {/* 2. Case Study Button - Premium Filled Style */}
                 {project.hasCaseStudy && (
-                  <Link
-                    href={`/${lng}/projects/${project.slug}`}
-                    className="ms-auto inline-flex items-center gap-2 text-sm font-medium text-[var(--accent-color)] hover:opacity-80 transition-opacity duration-300"
-                  >
-                    {caseStudyText}
-                    <ArrowIcon className="w-4 h-4" />
-                  </Link>
+                  <div className={`${isRTL ? 'text-left' : 'text-right'}`}>
+                    <Link
+                      href={`/${lng}/projects/${project.slug}`}
+                      className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-bold text-white transition-all duration-300 hover:shadow-lg hover:scale-105"
+                      style={{
+                        backgroundColor: 'var(--accent-color)',
+                        boxShadow: '0 4px 12px rgba(197, 164, 126, 0.3)',
+                      }}
+                    >
+                      {caseStudyText}
+                      <ArrowIcon className="w-4 h-4" />
+                    </Link>
+                  </div>
                 )}
               </div>
             </div>

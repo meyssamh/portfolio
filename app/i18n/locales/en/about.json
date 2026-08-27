@@ -33,7 +33,7 @@
   "langPersian": "Persian",
   "langGerman": "German",
   "langEnglish": "English",
-  "levelNative": "Native",
-  "levelC1": "C1 (Advanced)",
+  "levelNative": "Mother Tongue",
+  "levelFluent": "Fluent",
   "levelProfessional": "Professional"
 }
