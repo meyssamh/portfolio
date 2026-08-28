@@ -3,7 +3,6 @@ import { notFound } from 'next/navigation';
 import Header from '../../../../components/header/Header';
 import Footer from '../../../../components/footer/Footer';
 import { useTranslation } from '../../../i18n';
-import { notFound } from 'next/navigation';
 import CaseStudyClient from './CaseStudyClient';
 
 const projectsData = {

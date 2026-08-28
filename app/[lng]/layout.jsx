@@ -73,7 +73,7 @@ export const metadata = {
   icons: {
     icon: '/favicon.svg',
     shortcut: '/favicon.svg',
-    apple: '/favicon-32x32.png',
+    apple: '/favicon.svg',
   },
 };
 
@@ -83,8 +83,6 @@ export default async function RootLayout({ children, params }) {
   return (
     <html lang={lng} dir={dir(lng)} suppressHydrationWarning={true}>
       <head>
-        {/* ✅ Fixed: Changed from "../../favicon.svg" to "/favicon.svg" */}
-        <link rel="shortcut icon" href="/favicon.svg" type="image/svg+xml" />
       </head>
       {/* ✅ Added bg-[var(--background-color)] to force the background to change */}
       <body className="select-none bg-[var(--background-color)]" suppressHydrationWarning>
