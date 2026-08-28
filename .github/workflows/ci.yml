@@ -1,0 +1,39 @@
+name: CI/CD Pipeline
+
+# Trigger the workflow on push and pull requests to the main branch
+on:
+  push:
+    branches: [ "main", "master" ]
+  pull_request:
+    branches: [ "main", "master" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    # 1. Checkout your code from GitHub
+    - uses: actions/checkout@v4
+
+    # 2. Setup Node.js environment
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+        cache: 'npm'
+
+    # 3. Install dependencies cleanly
+    - name: Install dependencies
+      run: npm ci
+
+    # 4. Run ESLint to check for code errors
+    - name: Run Linter
+      run: npm run lint
+
+    # 5. Run TypeScript Type Checking
+    - name: Run Type Check
+      run: npx tsc --noEmit
+
+    # 6. Build the Next.js project
+    - name: Build Project
+      run: npm run build
