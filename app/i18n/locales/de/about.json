@@ -1,35 +1,74 @@
 {
   "about": "Über mich",
-  "paragraph1": "Hallo! Ich bin Seyed Meyssam Hosseinifard, ein leidenschaftlicher Web- und Java-Entwickler mit über 5 Jahren Erfahrung in der Erstellung digitaler Produkte. Meine Reise hat mich durch verschiedene Technologien geführt, aber meine Kernkompetenz liegt nun in der Entwicklung leistungsstarker Anwendungen mit React, Next.js und Java.",
-  "paragraph2": "Ich glaube, dass großartige Software dort entsteht, wo schönes Design auf robuste Technik trifft. Ich liebe es, komplexe Herausforderungen zu lösen und intuitive Benutzererfahrungen zu schaffen, die nicht nur hervorragend aussehen, sondern auch unter der Haube einwandfrei funktionieren.",
-  "paragraph3": "Ich bin immer auf der Suche nach der nächsten großen Herausforderung. Wenn Sie einen engagierten, detailorientierten Entwickler suchen, der bereit ist, Ihre Vision zum Leben zu erwecken, würde ich mich freuen, von Ihnen zu hören. Lassen Sie uns zusammenarbeiten und Ihre Ideen in die Realität umsetzen.",
+  "paragraph1": "Hallo! Ich bin Seyed Meyssam Hosseinifard, ein Fullstack-Entwickler mit über 8 Jahren Erfahrung, spezialisiert auf React, Next.js und Node.js. Ich habe einen Bachelor in Information Technology und spreche fließend Deutsch. Ich bin leidenschaftlich daran interessiert, performante, skalierbare Webanwendungen mit Fokus auf Clean Code und moderne UI/UX-Prinzipien zu entwickeln.",
+  "paragraph2": "Ich glaube, dass großartige Software dort entsteht, wo schönes Design auf robuste Technik trifft. Ich löse gerne komplexe Herausforderungen, von der Optimierung von REST-APIs und Datenbankverwaltung bis hin zur Gewährleistung nahtloser Benutzererfahrungen, die auch unter der Haube einwandfrei funktionieren.",
+  "paragraph3": "Ich bin immer auf der Suche nach der nächsten großen Herausforderung. Wenn Sie einen engagierten, detailorientierten Entwickler suchen, der Ihre Vision zum Leben erweckt, würde ich mich freuen, mich mit Ihnen zu vernetzen. Lassen Sie uns zusammenarbeiten und Ihre Ideen in die Realität umsetzen.",
+  
   "timelineTitle": "Mein Werdegang",
-  "item1_year": "2021 - Heute",
-  "item1_role": "Full-Stack Entwickler",
-  "item1_company": "Freelance",
-  "item1_desc": "Entwicklung moderner, skalierbarer Webanwendungen mit React, Next.js und Java Spring Boot.",
-  "item2_year": "2019 - 2021",
-  "item2_role": "Webentwickler",
-  "item2_company": "Verschiedene Projekte",
-  "item2_desc": "Entwicklung responsiver Websites und Progressive Web Apps mit Vue.js, Vuex und React.",
-  "skillsTitle": "Technische Expertise",
+  "item1_year": "05/2025 - Heute",
+  "item1_role": "Fullstack-Entwickler (React / Next.js / Node.js)",
+  "item1_company": "Chabok Sazan Fanavari Ettela'at",
+  "item1_desc": "Datenbankverwaltung, Erstellen und Warten von REST-APIs, API-Integration, Leistungsoptimierung, Fehlerbehebung, Sicherstellung der Codequalität und Deployment im Scrum-Team.",
+  
+  "item2_year": "09/2024 - 06/2025",
+  "item2_role": "Spezialisierter Berater für IT-Sicherheit",
+  "item2_company": "Schahid-Beheshti-Universität",
+  "item2_desc": "Analyse der IT-Infrastruktur, Bewertung von Sicherheitsrisiken und Durchführung von Sicherheitsschulungen für Mitarbeiter.",
+  
+  "item3_year": "03/2022 - 03/2023",
+  "item3_role": "Fullstack-Entwickler (C#)",
+  "item3_company": "Chabok Sazan Fanavari Ettela'at",
+  "item3_desc": "REST-API-Entwicklung, Datenbankverwaltung, API-Integration und Zusammenarbeit im Scrum-Team.",
+  
+  "item4_year": "10/2018 - 02/2022",
+  "item4_role": "Web-Entwickler (Vue.js)",
+  "item4_company": "Jahan Nama",
+  "item4_desc": "UI-Design, Erstellen von Komponenten, State-Management, Routing, Schreiben von Unit-Tests, Durchführung von Code-Reviews und Verwaltung von Build-Tools.",
+  
+  "item5_year": "04/2018 - 07/2020",
+  "item5_role": "Web-Entwickler",
+  "item5_company": "Honam",
+  "item5_desc": "Systeminstallation und -konfiguration, Themenentwicklung, Responsive Design, Updates, Backups und Fokus auf Benutzerfreundlichkeit und Barrierefreiheit.",
+
+  "item6_year": "10/2017 - 04/2018",
+  "item6_role": "Praktikant Webentwicklung",
+  "item6_company": "Homak Gesellschaft",
+  "item6_desc": "Strukturierung von Webseiten, Gestaltung und Layout von Webseiten, interaktive Elemente und clientseitige Logik.",
+
+  "item7_year": "04/2017 - 10/2017",
+  "item7_role": "Praktikant Java-Entwicklung",
+  "item7_company": "Homak Gesellschaft",
+  "item7_desc": "Grundlagen der Programmiersprache Java und Objektorientierte Programmierung (OOP).",
+
+  "skillsTitle": "Technische Kenntnisse",
   "expertLevel": "Experte",
   "proficientLevel": "Fortgeschritten",
-  "familiarLevel": "Vertraut",
+  "familiarLevel": "Grundkenntnisse",
+
   "educationTitle": "Ausbildung",
-  "university": "Applied Scientific University of Industries of Iran",
-  "degree": "Bachelor in Softwaretechnik",
-  "years": "2015 - 2019",
-  "certificationsTitle": "Zertifikate & Weiterbildung",
+  "university": "University of Applied Science and Technology",
+  "degree": "Bachelor of Information Technology",
+  "years": "02/2022 - 02/2026",
+
   "languagesTitle": "Sprachkenntnisse",
-  "testimonialTitle": "Was andere sagen",
-  "testimonialText": "Meyssam ist eine seltene Entdeckung. Seine Fähigkeit, komplexe Anforderungen in eleganten, skalierbaren Code zu übersetzen, ist unübertroffen. Er hat unsere Plattform vorzeitig und mit beispielloser Liebe zum Detail geliefert.",
-  "testimonialAuthor": "Sarah Jenkins",
-  "testimonialRole": "CTO, Tech Innovations",
   "langPersian": "Persisch",
   "langGerman": "Deutsch",
   "langEnglish": "Englisch",
   "levelNative": "Muttersprache",
   "levelFluent": "Fließend",
-  "levelProfessional": "Verhandlungssicher"
+  "levelProfessional": "Professionell",
+
+  "certificationsTitle": "Zertifikate",
+  "certifications": [
+    { "title": "UI Design (Anfänger)", "issuer": "LAITEC", "year": "2020" },
+    { "title": "JavaScript (Frontend/Backend)", "issuer": "LAITEC, Sharif Universität", "year": "2018" }
+  ],
+
+  "interestsTitle": "Interessen & Ehrenamt",
+  "interestsText": "Aktives ehrenamtliches Engagement bei Green Path - Clean Iran, Mehrafarin Charity und Sohanak Shelter.",
+  
+  "testimonialTitle": "Was andere sagen",
+  "testimonialText": "Meyssam ist eine seltene Entdeckung. Seine Fähigkeit, komplexe Anforderungen in eleganten, skalierbaren Code zu übersetzen, ist unübertroffen. Er hat unsere Plattform vor dem Zeitplan und mit makelloser Liebe zum Detail geliefert.",
+  "testimonialAuthor": "Sarah Jenkins",
+  "testimonialRole": "CTO, Tech Innovations"
 }

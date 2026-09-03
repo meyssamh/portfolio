@@ -1,0 +1,456 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seyed Meyssam Hosseinifard - Resume</title>
+
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./favicon.svg" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      :root {
+        --bg-color: #f2f0eb;
+        --text-main: #292524;
+        --text-muted: #57534e;
+        --accent: #8b7355;
+        --card-bg: #ffffff;
+        --border: rgba(41, 37, 36, 0.1);
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: 'Poppins', sans-serif;
+        background-color: var(--bg-color);
+        color: var(--text-main);
+        line-height: 1.6;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+        display: flex;
+        justify-content: center;
+        padding: 40px 20px;
+      }
+
+      .resume-container {
+        background: var(--card-bg);
+        width: 210mm;
+        min-height: 297mm;
+        padding: 50px 60px;
+        border-radius: 16px;
+        box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.08);
+        border: 1px solid var(--border);
+      }
+
+      header {
+        text-align: center;
+        margin-bottom: 35px;
+        padding-bottom: 25px;
+        border-bottom: 2px solid var(--accent);
+      }
+
+      h1 {
+        font-size: 2rem;
+        font-weight: 700;
+        letter-spacing: -0.02em;
+        color: var(--text-main);
+        margin-bottom: 8px;
+      }
+
+      .title {
+        font-size: 1rem;
+        color: var(--accent);
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        margin-bottom: 15px;
+      }
+
+      .contact-info {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px 25px;
+        font-size: 0.85rem;
+        color: var(--text-muted);
+      }
+
+      .contact-info span {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+      }
+      .contact-info a {
+        color: var(--text-muted);
+        text-decoration: none;
+        transition: color 0.3s;
+      }
+      .contact-info a:hover {
+        color: var(--accent);
+      }
+
+      section {
+        margin-bottom: 30px;
+      }
+
+      h2 {
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: var(--accent);
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+
+      h2::before {
+        content: '';
+        display: block;
+        width: 24px;
+        height: 2px;
+        background-color: var(--accent);
+      }
+
+      .entry {
+        margin-bottom: 18px;
+        page-break-inside: avoid;
+        break-inside: avoid;
+      }
+
+      .entry-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        margin-bottom: 4px;
+        flex-wrap: wrap;
+        gap: 5px;
+      }
+
+      .entry-title {
+        font-weight: 600;
+        font-size: 1rem;
+        color: var(--text-main);
+      }
+      .entry-subtitle {
+        font-weight: 400;
+        color: var(--text-muted);
+        font-size: 0.9rem;
+      }
+      .entry-date {
+        font-size: 0.85rem;
+        color: var(--accent);
+        font-weight: 500;
+        white-space: nowrap;
+      }
+
+      .entry-desc {
+        font-size: 0.9rem;
+        color: var(--text-muted);
+        margin-top: 6px;
+      }
+
+      .entry-desc ul {
+        list-style-type: none;
+        padding-left: 0;
+      }
+      .entry-desc li {
+        position: relative;
+        padding-left: 16px;
+        margin-bottom: 4px;
+      }
+      .entry-desc li::before {
+        content: '•';
+        color: var(--accent);
+        position: absolute;
+        left: 0;
+        font-weight: bold;
+        font-size: 1.1em;
+        line-height: 1.4;
+      }
+
+      .grid-2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+      }
+
+      .skill-group {
+        margin-bottom: 12px;
+      }
+      .skill-group strong {
+        color: var(--text-main);
+        font-size: 0.9rem;
+        display: block;
+        margin-bottom: 2px;
+      }
+      .skill-group span {
+        color: var(--text-muted);
+        font-size: 0.9rem;
+        line-height: 1.5;
+      }
+
+      @media print {
+        body {
+          background: white;
+          padding: 0;
+          display: block;
+        }
+        .resume-container {
+          width: 100%;
+          margin: 0;
+          padding: 30px 40px;
+          box-shadow: none;
+          border: none;
+          border-radius: 0;
+          min-height: auto;
+        }
+        a {
+          text-decoration: none;
+          color: var(--text-main) !important;
+        }
+        h2 {
+          color: var(--accent) !important;
+        }
+        .entry-date {
+          color: var(--accent) !important;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .resume-container {
+          width: 100%;
+          padding: 30px 20px;
+        }
+        .grid-2 {
+          grid-template-columns: 1fr;
+          gap: 20px;
+        }
+        .entry-header {
+          flex-direction: column;
+          gap: 2px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="resume-container">
+      <header>
+        <h1>Seyed Meyssam Hosseinifard</h1>
+        <div class="title">Fullstack Developer (React / Next.js / Node.js)</div>
+        <div class="contact-info">
+          <span>📅 June 19, 1985</span>
+          <span>📱 +98 921 016 72 11</span>
+          <span
+            >✉️
+            <a href="mailto:seyedmeyssam.hosseinifard@gmail.com"
+              >seyedmeyssam.hosseinifard@gmail.com</a
+            ></span
+          >
+          <span>📍 Tehran, Iran</span>
+          <span> <a href="https://meyssamdev.ir/en">meyssamdev.ir/en</a></span>
+          <span>💻 <a href="https://github.com/meyssamh">github.com/meyssamh</a></span>
+        </div>
+      </header>
+
+      <section>
+        <h2>Profile</h2>
+        <p class="entry-desc">
+          Fullstack Developer with over 5 years of experience in React, Next.js, and Node.js.
+          Bachelor in Information Technology. Fluent in German. Specialized in developing
+          high-performance, scalable web applications with a focus on Clean Code and modern UI/UX
+          principles.
+        </p>
+      </section>
+
+      <section>
+        <h2>Work Experience</h2>
+
+        <div class="entry">
+          <div class="entry-header">
+            <div>
+              <div class="entry-title">Fullstack Developer (React / Next.js / Node.js)</div>
+              <div class="entry-subtitle">Chabok Sazan Fanavari Ettela'at</div>
+            </div>
+            <div class="entry-date">05/2025 – Present</div>
+          </div>
+          <div class="entry-desc">
+            <ul>
+              <li>
+                Development and maintenance of REST APIs, database management, and performance
+                optimization.
+              </li>
+              <li>Collaboration in Scrum team, error analysis, and ensuring code quality.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="entry">
+          <div class="entry-header">
+            <div>
+              <div class="entry-title">Specialized IT Security Consultant</div>
+              <div class="entry-subtitle">Shahid Beheshti University</div>
+            </div>
+            <div class="entry-date">09/2024 – 06/2025</div>
+          </div>
+          <div class="entry-desc">
+            <ul>
+              <li>
+                Analysis of IT infrastructure, assessment of security risks, and employee training.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="entry">
+          <div class="entry-header">
+            <div>
+              <div class="entry-title">Fullstack Developer (C#)</div>
+              <div class="entry-subtitle">Chabok Sazan Fanavari Ettela'at</div>
+            </div>
+            <div class="entry-date">03/2022 – 03/2023</div>
+          </div>
+          <div class="entry-desc">
+            <ul>
+              <li>REST API development, database management, and API integration in Scrum team.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="entry">
+          <div class="entry-header">
+            <div>
+              <div class="entry-title">Web Developer (Vue.js)</div>
+              <div class="entry-subtitle">Jahan Nama</div>
+            </div>
+            <div class="entry-date">10/2018 – 02/2022</div>
+          </div>
+          <div class="entry-desc">
+            <ul>
+              <li>User interface development, state management, unit testing, and code reviews.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Education</h2>
+
+        <div class="entry">
+          <div class="entry-header">
+            <div>
+              <div class="entry-title">Bachelor of Information Technology</div>
+              <div class="entry-subtitle">University of Applied Science and Technology</div>
+            </div>
+            <div class="entry-date">02/2024 – 02/2026</div>
+          </div>
+        </div>
+
+        <div class="entry">
+          <div class="entry-header">
+            <div>
+              <div class="entry-title">Software Programming</div>
+              <div class="entry-subtitle">
+                University of Applied Science and Technology, Associate Degree
+              </div>
+            </div>
+            <div class="entry-date">02/2022 – 02/2024</div>
+          </div>
+        </div>
+
+        <div class="entry">
+          <div class="entry-header">
+            <div>
+              <div class="entry-title">Business Administration</div>
+              <div class="entry-subtitle">University of Duisburg-Essen</div>
+            </div>
+            <div class="entry-date">10/2008 – 03/2017</div>
+          </div>
+        </div>
+
+        <div class="entry">
+          <div class="entry-header">
+            <div>
+              <div class="entry-title">Assessment Examination (Abitur)</div>
+              <div class="entry-subtitle">Studienkolleg Aachen, Economic and Social Sciences</div>
+            </div>
+            <div class="entry-date">07/2007 – 06/2008</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="grid-2">
+        <div>
+          <h2>Skills</h2>
+          <div class="skill-group">
+            <strong>Expert</strong>
+            <span
+              >React.js, Next.js, Node.js, JavaScript, REST APIs, Redux, HTML5, CSS3/SCSS, Clean
+              Code, Scrum</span
+            >
+          </div>
+          <div class="skill-group">
+            <strong>Advanced</strong>
+            <span>TypeScript, Vue.js, Git, Java</span>
+          </div>
+          <div class="skill-group">
+            <strong>Basic Knowledge</strong>
+            <span>Python, Docker, Azure</span>
+          </div>
+        </div>
+
+        <div>
+          <h2>Languages</h2>
+          <div class="skill-group">
+            <strong>German</strong>
+            <span>Fluent</span>
+          </div>
+          <div class="skill-group">
+            <strong>English</strong>
+            <span>Fluent</span>
+          </div>
+          <div class="skill-group">
+            <strong>Persian</strong>
+            <span>Native</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="grid-2">
+        <div>
+          <h2>Projects</h2>
+          <div class="skill-group">
+            <strong>Classroom - Learning Management System</strong>
+            <span
+              >React, Next.js, Node.js (07/2023 – 09/2023)<br />
+              <a
+                href="https://github.com/meyssamh/Classroom_frontend"
+                style="color: var(--accent); text-decoration: underline"
+                >github.com/meyssamh/Classroom_frontend</a
+              ></span
+            >
+          </div>
+        </div>
+
+        <div>
+          <h2>Interests</h2>
+          <p class="entry-desc" style="margin-top: 0">
+            Volunteer Work: Green Path - Clean Iran, Mehrafarin Charity, Sohanak Shelter.
+          </p>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

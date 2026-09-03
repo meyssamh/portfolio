@@ -1,39 +1,73 @@
 {
   "about": "About Me",
-  "paragraph1": "Hello! I’m Seyed Meyssam Hosseinifard, a passionate Web and JavaScriptDeveloper with over 5 years of experience building digital products. My journey has taken me through various technologies, but my core expertise now lies in crafting high-performance applications using React, Next.js, and JavaScript.",
-  "paragraph2": "I believe that great software is where beautiful design meets robust engineering. I thrive on solving complex challenges and building intuitive user experiences that not only look stunning but perform flawlessly under the hood.",
+  "paragraph1": "Hello! I’m Seyed Meyssam Hosseinifard, a Fullstack Developer with over 8 years of experience specializing in React, Next.js, and Node.js. I hold a Bachelor's degree in Information Technology and speak fluent German. I am passionate about building high-performance, scalable web applications with a strong focus on Clean Code and modern UI/UX principles.",
+  "paragraph2": "I believe that great software is where beautiful design meets robust engineering. I thrive on solving complex challenges, from optimizing REST APIs and managing databases to ensuring seamless user experiences that perform flawlessly under the hood.",
   "paragraph3": "I am always looking for the next big challenge. If you are seeking a dedicated, detail-oriented developer ready to bring your vision to life, I would love to connect. Let's collaborate and turn your ideas into reality.",
+  
   "timelineTitle": "My Journey",
-  "item1_year": "2021 - Present",
-  "item1_role": "Full-Stack Developer",
-  "item1_company": "Freelance",
-  "item1_desc": "Building modern, scalable web applications with React, Next.js, and Java Spring Boot.",
-  "item2_year": "2019 - 2021",
-  "item2_role": "Web Developer",
-  "item2_company": "Various Projects",
-  "item2_desc": "Developed responsive websites and Progressive Web Apps using Vue.js and React.",
+  "item1_year": "05/2025 - Present",
+  "item1_role": "Fullstack Developer (React / Next.js / Node.js)",
+  "item1_company": "Chabok Sazan Fanavari Ettela'at",
+  "item1_desc": "Database management, creating and maintaining REST APIs, API integration, performance optimization, bug fixing, code quality assurance, and deployment in a Scrum team.",
+  
+  "item2_year": "09/2024 - 06/2025",
+  "item2_role": "Specialized IT Security Consultant",
+  "item2_company": "Shahid Beheshti University",
+  "item2_desc": "Analysis of IT infrastructure, assessment of security risks, and conducting security training sessions for employees.",
+  
+  "item3_year": "03/2022 - 03/2023",
+  "item3_role": "Fullstack Developer (C#)",
+  "item3_company": "Chabok Sazan Fanavari Ettela'at",
+  "item3_desc": "REST API development, database management, API integration, and collaboration within an Agile/Scrum team.",
+  
+  "item4_year": "10/2018 - 02/2022",
+  "item4_role": "Web Developer (Vue.js)",
+  "item4_company": "Jahan Nama",
+  "item4_desc": "UI design, component creation, state management, routing, writing unit tests, conducting code reviews, and managing build tools.",
+  
+  "item5_year": "04/2018 - 07/2020",
+  "item5_role": "Web Developer",
+  "item5_company": "Honam",
+  "item5_desc": "System installation and configuration, theme development, responsive design, updates, backups, and focusing on usability and accessibility.",
+
+  "item6_year": "10/2017 - 04/2018",
+  "item6_role": "Web Development Intern",
+  "item6_company": "Homak Gesellschaft",
+  "item6_desc": "Structuring websites, designing layouts, and implementing interactive elements and client-side logic.",
+
+  "item7_year": "04/2017 - 10/2017",
+  "item7_role": "Java Development Intern",
+  "item7_company": "Homak Gesellschaft",
+  "item7_desc": "Learning the fundamentals of the Java programming language and Object-Oriented Programming (OOP).",
 
   "skillsTitle": "Technical Expertise",
   "expertLevel": "Expert",
-  "proficientLevel": "Proficient",
-  "familiarLevel": "Familiar",
+  "proficientLevel": "Advanced",
+  "familiarLevel": "Basic",
 
   "educationTitle": "Education",
-  "university": "Applied Scientific University of Industries of Iran",
-  "degree": "Bachelor's Degree in Software Engineering",
-  "years": "2015 - 2019",
+  "university": "University of Applied Science and Technology",
+  "degree": "Bachelor of Information Technology",
+  "years": "02/2022 - 02/2026",
 
   "languagesTitle": "Language Proficiency",
-
-  "testimonialTitle": "What Others Say",
-  "testimonialText": "Meyssam is a rare find. His ability to translate complex requirements into elegant, scalable code is unmatched. He delivered our platform ahead of schedule with impeccable attention to detail.",
-  "testimonialAuthor": "Sarah Jenkins",
-  "testimonialRole": "CTO, Tech Innovations",
-  "certificationsTitle": "Certifications & Learning",
   "langPersian": "Persian",
   "langGerman": "German",
   "langEnglish": "English",
-  "levelNative": "Mother Tongue",
+  "levelNative": "Native",
   "levelFluent": "Fluent",
-  "levelProfessional": "Professional"
+  "levelProfessional": "Professional",
+
+  "certificationsTitle": "Certifications",
+  "certifications": [
+    { "title": "UI Design (Beginner)", "issuer": "LAITEC", "year": "2020" },
+    { "title": "JavaScript (Frontend/Backend)", "issuer": "LAITEC, Sharif University", "year": "2018" }
+  ],
+
+  "interestsTitle": "Interests & Volunteering",
+  "interestsText": "Active volunteer with Green Path - Clean Iran, Mehrafarin Charity, and Sohanak Shelter.",  
+  "testimonialTitle": "What Others Say",
+  "testimonialText": "Meyssam is a rare find. His ability to translate complex requirements into elegant, scalable code is unmatched. He delivered our platform ahead of schedule with impeccable attention to detail.",
+  "testimonialAuthor": "Sarah Jenkins",
+  "testimonialRole": "CTO, Tech Innovations"
 }

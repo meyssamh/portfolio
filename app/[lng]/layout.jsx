@@ -82,8 +82,7 @@ export default async function RootLayout({ children, params }) {
 
   return (
     <html lang={lng} dir={dir(lng)} suppressHydrationWarning={true}>
-      <head>
-      </head>
+      <head></head>
       {/* ✅ Added bg-[var(--background-color)] to force the background to change */}
       <body className="select-none bg-[var(--background-color)]" suppressHydrationWarning>
         <SkipToContent lng={lng} />
