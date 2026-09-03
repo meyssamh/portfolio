@@ -1,0 +1,460 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>سید میثم حسینی‌فرد - رزومه</title>
+
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./favicon.svg" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      @font-face {
+        font-family: 'IRANSans';
+        src: url('./fonts/IRANSans/ttf/IRANSansWeb(FaNum).ttf') format('truetype');
+        font-weight: 400;
+      }
+      @font-face {
+        font-family: 'IRANSans';
+        src: url('./fonts/IRANSans/ttf/IRANSansWeb(FaNum)_Bold.ttf') format('truetype');
+        font-weight: 700;
+      }
+      @font-face {
+        font-family: 'IRANSans';
+        src: url('./fonts/IRANSans/ttf/IRANSansWeb(FaNum)_Medium.ttf') format('truetype');
+        font-weight: 500;
+      }
+
+      :root {
+        --bg-color: #f2f0eb;
+        --text-main: #292524;
+        --text-muted: #57534e;
+        --accent: #8b7355;
+        --card-bg: #ffffff;
+        --border: rgba(41, 37, 36, 0.1);
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: 'IRANSans', 'Poppins', sans-serif;
+        background-color: var(--bg-color);
+        color: var(--text-main);
+        line-height: 1.8;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+        display: flex;
+        justify-content: center;
+        padding: 40px 20px;
+      }
+
+      .resume-container {
+        background: var(--card-bg);
+        width: 210mm;
+        min-height: 297mm;
+        padding: 50px 60px;
+        border-radius: 16px;
+        box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.08);
+        border: 1px solid var(--border);
+      }
+
+      header {
+        text-align: center;
+        margin-bottom: 35px;
+        padding-bottom: 25px;
+        border-bottom: 2px solid var(--accent);
+      }
+
+      h1 {
+        font-size: 2rem;
+        font-weight: 700;
+        letter-spacing: -0.02em;
+        color: var(--text-main);
+        margin-bottom: 8px;
+      }
+
+      .title {
+        font-size: 1rem;
+        color: var(--accent);
+        font-weight: 500;
+        margin-bottom: 15px;
+      }
+
+      .contact-info {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px 25px;
+        font-size: 0.85rem;
+        color: var(--text-muted);
+      }
+
+      .contact-info span {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+      }
+      .contact-info a {
+        color: var(--text-muted);
+        text-decoration: none;
+        transition: color 0.3s;
+      }
+      .contact-info a:hover {
+        color: var(--accent);
+      }
+
+      section {
+        margin-bottom: 30px;
+      }
+
+      h2 {
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: var(--accent);
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+
+      h2::before {
+        content: '';
+        display: block;
+        width: 24px;
+        height: 2px;
+        background-color: var(--accent);
+      }
+
+      .entry {
+        margin-bottom: 18px;
+        page-break-inside: avoid;
+        break-inside: avoid;
+      }
+
+      .entry-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        margin-bottom: 4px;
+        flex-wrap: wrap;
+        gap: 5px;
+      }
+
+      .entry-title {
+        font-weight: 600;
+        font-size: 1rem;
+        color: var(--text-main);
+      }
+      .entry-subtitle {
+        font-weight: 400;
+        color: var(--text-muted);
+        font-size: 0.9rem;
+      }
+      .entry-date {
+        font-size: 0.85rem;
+        color: var(--accent);
+        font-weight: 500;
+        white-space: nowrap;
+      }
+
+      .entry-desc {
+        font-size: 0.9rem;
+        color: var(--text-muted);
+        margin-top: 6px;
+      }
+
+      .entry-desc ul {
+        list-style-type: none;
+        padding-right: 0;
+      }
+      .entry-desc li {
+        position: relative;
+        padding-right: 16px;
+        margin-bottom: 4px;
+      }
+      .entry-desc li::before {
+        content: '•';
+        color: var(--accent);
+        position: absolute;
+        right: 0;
+        font-weight: bold;
+        font-size: 1.1em;
+        line-height: 1.4;
+      }
+
+      .grid-2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+      }
+
+      .skill-group {
+        margin-bottom: 12px;
+      }
+      .skill-group strong {
+        color: var(--text-main);
+        font-size: 0.9rem;
+        display: block;
+        margin-bottom: 2px;
+      }
+      .skill-group span {
+        color: var(--text-muted);
+        font-size: 0.9rem;
+        line-height: 1.5;
+      }
+
+      @media print {
+        body {
+          background: white;
+          padding: 0;
+          display: block;
+        }
+        .resume-container {
+          width: 100%;
+          margin: 0;
+          padding: 30px 40px;
+          box-shadow: none;
+          border: none;
+          border-radius: 0;
+          min-height: auto;
+        }
+        a {
+          text-decoration: none;
+          color: var(--text-main) !important;
+        }
+        h2 {
+          color: var(--accent) !important;
+        }
+        .entry-date {
+          color: var(--accent) !important;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .resume-container {
+          width: 100%;
+          padding: 30px 20px;
+        }
+        .grid-2 {
+          grid-template-columns: 1fr;
+          gap: 20px;
+        }
+        .entry-header {
+          flex-direction: column;
+          gap: 2px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="resume-container">
+      <header>
+        <h1>سید میثم حسینی‌فرد</h1>
+        <div class="title">توسعه‌دهنده فول‌استک (React / Next.js / Node.js)</div>
+        <div class="contact-info">
+          <span> ۱۹ ژوئن ۱۹۸۵</span>
+          <span>📱 ۷۲ ۱۱ ۰۱۶ ۹۲۱ ۹۸+</span>
+          <span
+            >✉️
+            <a href="mailto:seyedmeyssam.hosseinifard@gmail.com"
+              >seyedmeyssam.hosseinifard@gmail.com</a
+            ></span
+          >
+          <span> تهران، ایران</span>
+          <span>🌐 <a href="https://meyssamdev.ir/fa">meyssamdev.ir/fa</a></span>
+          <span>💻 <a href="https://github.com/meyssamh">github.com/meyssamh</a></span>
+        </div>
+      </header>
+
+      <section>
+        <h2>پروفایل</h2>
+        <p class="entry-desc">
+          توسعه‌دهنده فول‌استک با بیش از ۵ سال تجربه در React، Next.js و Node.js. کارشناسی فناوری
+          اطلاعات. مسلط به زبان آلمانی. متخصص در توسعه برنامه‌های وب با کارایی بالا و مقیاس‌پذیر با
+          تمرکز بر Clean Code و اصول مدرن UI/UX.
+        </p>
+      </section>
+
+      <section>
+        <h2>سابقه کاری</h2>
+
+        <div class="entry">
+          <div class="entry-header">
+            <div>
+              <div class="entry-title">توسعه‌دهنده فول‌استک (React / Next.js / Node.js)</div>
+              <div class="entry-subtitle">چابک‌سازان فناوری اطلاعات</div>
+            </div>
+            <div class="entry-date">۰۵/۲۰۲۵ – اکنون</div>
+          </div>
+          <div class="entry-desc">
+            <ul>
+              <li>توسعه و نگهداری REST APIs، مدیریت پایگاه داده و بهینه‌سازی عملکرد</li>
+              <li>همکاری در تیم اسکرام، تحلیل خطا و اطمینان از کیفیت کد</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="entry">
+          <div class="entry-header">
+            <div>
+              <div class="entry-title">مشاور متخصص امنیت فناوری اطلاعات</div>
+              <div class="entry-subtitle">دانشگاه شهید بهشتی</div>
+            </div>
+            <div class="entry-date">۰۹/۲۰۲۴ – ۶/۲۰۲۵</div>
+          </div>
+          <div class="entry-desc">
+            <ul>
+              <li>تحلیل زیرساخت فناوری اطلاعات، ارزیابی ریسک‌های امنیتی و آموزش کارکنان</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="entry">
+          <div class="entry-header">
+            <div>
+              <div class="entry-title">توسعه‌دهنده فول‌استک (C#)</div>
+              <div class="entry-subtitle">چابک‌سازان فناوری اطلاعات</div>
+            </div>
+            <div class="entry-date">۰۳/۲۰۲۲ – ۰۳/۲۰۲۳</div>
+          </div>
+          <div class="entry-desc">
+            <ul>
+              <li>توسعه REST API، مدیریت پایگاه داده و یکپارچه‌سازی API در تیم اسکرام</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="entry">
+          <div class="entry-header">
+            <div>
+              <div class="entry-title">توسعه‌دهنده وب (Vue.js)</div>
+              <div class="entry-subtitle">جهان‌نما</div>
+            </div>
+            <div class="entry-date">۰/۲۰۱۸ – ۰۲/۲۰۲۲</div>
+          </div>
+          <div class="entry-desc">
+            <ul>
+              <li>توسعه رابط‌های کاربری، مدیریت state، تست واحد و بررسی کد</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>تحصیلات</h2>
+
+        <div class="entry">
+          <div class="entry-header">
+            <div>
+              <div class="entry-title">کارشناسی فناوری اطلاعات</div>
+              <div class="entry-subtitle">دانشگاه علمی کاربردی</div>
+            </div>
+            <div class="entry-date">۲/۲۰۲۴ – ۰۲/۲۰۲۶</div>
+          </div>
+        </div>
+
+        <div class="entry">
+          <div class="entry-header">
+            <div>
+              <div class="entry-title">برنامه‌نویسی نرم‌افزار</div>
+              <div class="entry-subtitle">دانشگاه علمی کاربردی، کاردانی</div>
+            </div>
+            <div class="entry-date">۰۲/۲۲۲ – ۰۲/۲۰۲۴</div>
+          </div>
+        </div>
+
+        <div class="entry">
+          <div class="entry-header">
+            <div>
+              <div class="entry-title">مدیریت کسب‌وکار</div>
+              <div class="entry-subtitle">دانشگاه دویسبورگ-اسن</div>
+            </div>
+            <div class="entry-date">۱۰/۲۰۰ – ۰۳/۲۰۱۷</div>
+          </div>
+        </div>
+
+        <div class="entry">
+          <div class="entry-header">
+            <div>
+              <div class="entry-title">آزمون ارزیابی (Abitur)</div>
+              <div class="entry-subtitle">اشتودین‌کولگ آخن، مطالعات اقتصادی و علوم اجتماعی</div>
+            </div>
+            <div class="entry-date">۰۷/۲۰۰۷ – ۰۶/۲۰۰۸</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="grid-2">
+        <div>
+          <h2>مهارت‌ها</h2>
+          <div class="skill-group">
+            <strong>متخصص</strong>
+            <span
+              >React.js, Next.js, Node.js, JavaScript, REST APIs, Redux, HTML5, CSS3/SCSS, Clean
+              Code, Scrum</span
+            >
+          </div>
+          <div class="skill-group">
+            <strong>پیشرفته</strong>
+            <span>TypeScript, Vue.js, Git, Java</span>
+          </div>
+          <div class="skill-group">
+            <strong>مقدماتی</strong>
+            <span>Python, Docker, Azure</span>
+          </div>
+        </div>
+
+        <div>
+          <h2>زبان‌ها</h2>
+          <div class="skill-group">
+            <strong>آلمانی</strong>
+            <span>مسلط</span>
+          </div>
+          <div class="skill-group">
+            <strong>انگلیسی</strong>
+            <span>مسلط</span>
+          </div>
+          <div class="skill-group">
+            <strong>فارسی</strong>
+            <span>زبان مادری</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="grid-2">
+        <div>
+          <h2>پروژه‌ها</h2>
+          <div class="skill-group">
+            <strong>Classroom - سیستم مدیریت یادگیری</strong>
+            <span
+              >React, Next.js, Node.js (۷/۲۰۲ – ۰۹/۲۲۳)<br />
+              <a
+                href="https://github.com/meyssamh/Classroom_frontend"
+                style="color: var(--accent); text-decoration: underline"
+                >github.com/meyssamh/Classroom_frontend</a
+              ></span
+            >
+          </div>
+        </div>
+
+        <div>
+          <h2>علایق</h2>
+          <p class="entry-desc" style="margin-top: 0">
+            فعالیت‌های داوطلبانه: Green Path - Clean Iran، خیریه مهرآفرین، پناهگاه سوهنک
+          </p>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

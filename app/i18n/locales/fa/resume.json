@@ -1,11 +1,12 @@
 {
-  "title": "رزومه",
-  "subtitle": "نسخه رسمی رزومه من را به صورت PDF دانلود کنید، شامل تمامی مهارت‌ها و سوابق حرفه‌ای.",
-  "downloadBtn": "دانلود رزومه (PDF)",
+  "title": "رزومه من",
+  "subtitle": "رزومه من را به صورت PDF دانلود کنید یا نسخه تعاملی وب را مشاهده نمایید.",
+  "downloadBtn": "دانلود PDF",
+  "viewHtmlBtn": "مشاهده نسخه تعاملی HTML",
   "statStatusValue": "آماده به کار",
-  "statStatusLabel": "وضعیت فعلی",
-  "statProjectsValue": "۲۰+",
-  "statProjectsLabel": "پروژه‌های انجام شده",
-  "statYearsValue": "۵+",
+  "statStatusLabel": "وضعیت شغلی",
+  "statProjectsValue": "+۲۰",
+  "statProjectsLabel": "پروژه تکمیل شده",
+  "statYearsValue": "+۸",
   "statYearsLabel": "سال تجربه"
 }

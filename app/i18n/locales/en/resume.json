@@ -1,11 +1,12 @@
 {
-  "title": "Resume",
-  "subtitle": "Download the official PDF version of my resume, featuring my complete skills and experience.",
-  "downloadBtn": "Download Resume (PDF)",
-  "statStatusValue": "Open to Work",
-  "statStatusLabel": "Current Status",
-  "statProjectsValue": "+20",
-  "statProjectsLabel": "Projects Delivered",
-  "statYearsValue": "+5",
-  "statYearsLabel": "Years Experience"
+  "title": "My Resume",
+  "subtitle": "Download my CV or explore the interactive web version.",
+  "downloadBtn": "Download PDF",
+  "viewHtmlBtn": "View Interactive HTML",
+  "statStatusValue": "Available",
+  "statStatusLabel": "Work Status",
+  "statProjectsValue": "20+",
+  "statProjectsLabel": "Projects Completed",
+  "statYearsValue": "8+",
+  "statYearsLabel": "Years of Experience"
 }

@@ -6,7 +6,7 @@ import reactHooks from 'eslint-plugin-react-hooks';
 export default [
   // 1. Base recommended JavaScript rules
   js.configs.recommended,
-  
+
   // 2. Define browser and Node.js globals
   {
     languageOptions: {
@@ -16,7 +16,7 @@ export default [
       },
     },
   },
-  
+
   // 3. Next.js Core Web Vitals AND React Hooks rules
   {
     plugins: {

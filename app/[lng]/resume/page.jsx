@@ -16,7 +16,7 @@ export default async function ResumePage({ params }) {
           title={t('title')}
           subtitle={t('subtitle')}
           downloadBtn={t('downloadBtn')}
-          printBtn={t('printBtn')}
+          viewHtmlBtn={t('viewHtmlBtn')}
           statStatusValue={t('statStatusValue')}
           statStatusLabel={t('statStatusLabel')}
           statProjectsValue={t('statProjectsValue')}

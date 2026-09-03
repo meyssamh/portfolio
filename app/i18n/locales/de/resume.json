@@ -1,11 +1,12 @@
 {
-  "title": "Lebenslauf",
-  "subtitle": "Laden Sie die offizielle PDF-Version meines Lebenslaufs herunter, inklusive aller Fähigkeiten und Erfahrungen.",
-  "downloadBtn": "Lebenslauf herunterladen (PDF)",
-  "statStatusValue": "Offen für Projekte",
-  "statStatusLabel": "Aktueller Status",
-  "statProjectsValue": "+20",
+  "title": "Mein Lebenslauf",
+  "subtitle": "Laden Sie meinen Lebenslauf als PDF herunter oder entdecken Sie die interaktive Web-Version.",
+  "downloadBtn": "PDF herunterladen",
+  "viewHtmlBtn": "Interaktives HTML ansehen",
+  "statStatusValue": "Verfügbar",
+  "statStatusLabel": "Verfügbarkeit",
+  "statProjectsValue": "20+",
   "statProjectsLabel": "Abgeschlossene Projekte",
-  "statYearsValue": "+5",
+  "statYearsValue": "8+",
   "statYearsLabel": "Jahre Erfahrung"
 }
