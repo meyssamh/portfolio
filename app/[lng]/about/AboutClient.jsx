@@ -160,7 +160,7 @@ export default function AboutClient({
                   <div className={`absolute w-3 h-3 rounded-full bg-[var(--accent-color)] ring-4 ring-[var(--background-color)] dark:ring-[var(--background-color)] shadow-lg ${isRTL ? 'right-[18px] md:right-[26px]' : 'left-[18px] md:left-[26px]'} top-[30px] md:top-[38px]`} />
                   <div className="card p-6 md:p-8 rounded-2xl group hover:border-[var(--accent-color)] transition-all duration-300 hover:shadow-xl">
                     <div className="flex items-center gap-3 mb-4">
-                      <span className="inline-flex items-center px-3 py-1.5 rounded-full text-xs font-bold tracking-wide uppercase" style={{ backgroundColor: 'var(--accent-color)', color: 'white', boxShadow: '0 2px 8px rgba(197, 164, 126, 0.3)' }}>
+                      <span className="inline-flex items-center px-3 py-1.5 rounded-full text-xs font-bold text-white dark:text-zinc-900 tracking-wide uppercase" style={{ backgroundColor: 'var(--accent-color)', boxShadow: '0 2px 8px rgba(197, 164, 126, 0.3)' }}>
                         {item.year}
                       </span>
                       <div className="h-px flex-1 bg-gradient-to-r from-[var(--card-border)] to-transparent" />

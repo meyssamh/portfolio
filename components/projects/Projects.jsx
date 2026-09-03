@@ -196,7 +196,7 @@ export default function Projects({
                   <div className={`${isRTL ? 'text-left' : 'text-right'}`}>
                     <Link
                       href={`/${lng}/projects/${project.slug}`}
-                      className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-bold text-white transition-all duration-300 hover:shadow-lg hover:scale-105"
+                      className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-bold text-white dark:text-zinc-900 transition-all duration-300 hover:shadow-lg hover:scale-105"
                       style={{
                         backgroundColor: 'var(--accent-color)',
                         boxShadow: '0 4px 12px rgba(197, 164, 126, 0.3)',
